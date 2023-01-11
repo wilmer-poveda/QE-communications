@@ -5,49 +5,42 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     
     <style type="text/css">
-        body{
+        /*body{
             background-color: rgb(8, 168, 236,1) !important; 
             background-color: #08a8ec !important;
-        }
+        }*/
 
-        .content{
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-        }
+        
         /* ********************************************
         Header 
         ******************************************** */
-        .header{
+        #header{
             background-image: url("https://static.vecteezy.com/system/resources/previews/006/464/730/non_2x/molecule-connected-lines-with-dots-light-effects-technology-on-blue-background-abstract-internet-network-design-for-website-digital-data-communication-science-and-futuristic-concept-free-vector.jpg");
             background-repeat: no-repeat;
             background-attachment: inherit;
             background-position: left; /*revert*/ 
             background-color: transparent;
-            box-shadow: 5px -5px 20px #08a8ec;
-            -webkit-box-shadow: 5px -5px 20px #08a8ec;
-            -moz-box-shadow: 5px -5px 20px #08a8ec;
             height: 560px;
             margin: 10px auto 10px auto;
             padding: 32px 40px 10px 40px;
             width: 570px;
         }
-        .header div:first-child{
+        #header div:first-child{
             height: 40%;
         }
 
-        .header div:nth-child(2){
+        #header div:nth-child(2){
             height: 60%;
         }
         
-        .header div:nth-child(2) img{
+        #header div:nth-child(2) img{
             margin: 0px 20px;
         }
 
-        .header .company-logo{
+        #header .company-logo{
             height: 30px;
         }
-        .header .qe-logo{
+        #header .qe-logo{
             display: inline-block;
             position: relative !important;
             height: 40px;
@@ -78,10 +71,6 @@
             background-position: right;
             border: 0px;
             border-spacing: 0 15px;
-            box-shadow: 5px -5px 20px #08a8ec;
-            -webkit-box-shadow: 5px -5px 20px #08a8ec;
-            -moz-box-shadow: 5px -5px 20px #08a8ec;
-            background-color: transparent;
             font-family: 'Times New Roman'; 
             font-size: medium;
             margin: 10px auto 10px auto;
@@ -160,13 +149,14 @@
         Botón "Agéndate"
         ******************************************** */
         .agendate{
+            height: 0px;
             margin: 40px 10px 10px 10px;
         }
 
         .agendate a{
             border-radius: 30px;
             border-style: solid;
-            background-color: #08a8ec;
+            background-color: inherit;
             color: #fff;
             padding: 5px 15px;
             margin: 10px 10px;
@@ -174,7 +164,7 @@
             text-decoration: none;
             width: 160px;
         }
-        .agendate:hover a{
+        .agendate a:hover{
             background-color: #2c2ce9 !important;
             border: 2px solid #fff !important;
         }
@@ -187,13 +177,21 @@
         }
 
         .social-media{
-            margin-left: 15px;
+            margin:12px 15px 0px 0px;
             max-height: 50px;
             max-width: 50px;
             display: inline-flex;
         }
         
-        .social-media:hover  a{
+        
+        * [title="social-box"]:hover{
+            background-color: #08a8ec;
+            border-radius: 100%;
+            height: 34px;
+            width: 35px;
+        }
+        
+        .social-media:hover{
             background-color: #08a8ec;
             border-radius: 100%;
             height: 34px;
@@ -205,18 +203,12 @@
             font-size: 0.68rem;
             line-height: normal;
         }
-
-        .ii{
-            background-color: rgb(8, 168, 236,1) !important; 
-            background-color: #08a8ec !important;
-        }
-
     </style>
     
 </head>
-<body style="background-color: #08a8ec !important, width: 1000px, height: 1000px;">
+<body style="background-color: #08a8ec !important; width: 100%; height: 100%;">
     <div class="content"  style="background-color: transparent">
-        <div class="header">
+        <div id="header">
             <div>
                 <img src="https://statics.globant.com/production/public/2020-04/globant-light-bg-color%402x%20%282%29.png" class="company-logo" alt="Globant logo">
                 <p class="main-title">Tech talks</p>
@@ -311,7 +303,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="social-media">
+                        <div class="social-media" title="social-box">
                             <a href="https://www.facebook.com/Globant" target="_blank" rel="noopener">
                                 <img src="https://ci4.googleusercontent.com/proxy/93T2jK-kA8VDjTWLQu1qt0PoKuwD1SpvoJMfKUX85RObO1djwEdUBIua8NIJpedJXkLglV-P9jbKB27ZIyc3IR6gq0nmzFug7vE1zoyHFWtYoisxn6s=s0-d-e1-ft#https://communications.globant.com/Comm/footer2017/facebook2017.png" alt="facebook" width="35" height="35" title="let's go there">
                             </a>
