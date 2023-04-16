@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <style type="text/css">
+        /*@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');*/
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
+        /*body{
+            background-color: rgb(8, 168, 236,1) !important; 
+            background-color: #08a8ec !important;
+        }*/
+
+        
+        /* ********************************************
+        Header 
+        ******************************************** */
+        #header{
+            background-image: url("https://static.vecteezy.com/system/resources/previews/006/464/730/non_2x/molecule-connected-lines-with-dots-light-effects-technology-on-blue-background-abstract-internet-network-design-for-website-digital-data-communication-science-and-futuristic-concept-free-vector.jpg");
+            background-repeat: no-repeat;
+            background-position: left; /*revert*/ 
+            height: 560px;
+            margin: 10px auto 10px auto;
+            padding: 32px 40px 10px 40px;
+            width: 570px;
+        }
+        #header div:first-child{
+            height: 40%;
+        }
+
+        #header div:nth-child(2){
+            height: 60%;
+        }
+        
+        #header div:nth-child(2) img{
+            margin: 0px 20px 0px 0px;
+        }
+
+        #header .company-logo{
+            height: 30px;
+        }
+        #header .qe-logo{
+            display: inline-block;
+            position: relative !important;
+            height: 40px;
+            object-position: 0px 0px;
+        }
+
+        p.main-title{
+            color: #fff;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 4rem;
+            line-height: 1px;
+            letter-spacing: 1px;
+        }
+
+        p.sub-title{
+            color: #fff;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+            font-size: 2.5rem;
+            line-height: 44px;
+            margin: 0px 0px 0px 0px;
+            padding: 70px 0px;
+        }
+
+        /* ********************************************
+        Table design
+        ******************************************** */
+        #table-content{
+            background-image: url("https://static.vecteezy.com/system/resources/previews/006/464/730/non_2x/molecule-connected-lines-with-dots-light-effects-technology-on-blue-background-abstract-internet-network-design-for-website-digital-data-communication-science-and-futuristic-concept-free-vector.jpg");
+            background-position: right;
+            border: 0px;
+            border-spacing: 0 15px;
+            font-family: 'Times New Roman'; 
+            font-size: medium;
+            margin: 10px auto 10px auto;
+            width: 650px;
+            max-width: 650px;
+            text-align: center;
+        }
+
+        thead{
+            color: #fff;
+            font-family: Heebo , sans-serif;
+            font-size: 1rem;
+        }
+
+        tbody{
+            /*display: inline-table;*/
+            padding: 0px 40px 20px 40px;
+        }
+
+        th, tbody tr{
+            /*display: inline;*/
+            line-height: 1rem;
+        }
+
+        tbody tr td {
+            width: 48%;
+            /* display: inline-block;   ---- Grid*/
+        }
+
+        th, .table-text {
+            line-height: 50%;
+            font-weight: 100;
+        }
+
+        /* ********************************************
+        Speaker cards
+        ******************************************** */
+        .speaker-content{
+            border: solid #000;
+            background-color: #fffffc !important;
+            border-radius: 10px 10px;
+            font-family: hebbo,sans-serif;
+            margin: auto 10px auto 10px;
+            padding: 5px 5px;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        h1{
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        
+        .speaker-content h2{
+            font-weight: 700;
+            font-size: 0.87rem;
+            margin-bottom: 5px;
+        }
+        
+        .speaker-img{
+            background-color: #fff;
+            border-color: transparent !important;
+            display: inline-block;
+            min-height: 100px;
+            margin-top: 5%;
+            padding: 10px;
+            vertical-align: top;
+            width: 19%;
+        }
+
+        .speaker-img img{
+            border: solid 2px #fff;
+            border-radius: 100%;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            max-height: 100px;
+            max-width: 100px;
+            height: 100px;
+            width: 100px;
+            vertical-align: middle;
+        }
+
+        .speaker-border{
+            display: block;
+            position: sticky
+        }
+        .speaker-border:after{
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: 3px;
+            right: 0px;
+            bottom: 0px;
+            background: red;
+            z-index: -1;
+            border-radius: 100%;
+            height: 113px;
+            width: 113px;
+        }
+
+        .tech-description{
+            background: #f2f2f2;
+            border-radius: 10px 10px;
+            display: inline-block;
+            font-size: 0.9rem;
+            line-height: 150% !important;
+            padding: 15px;
+            text-align: justify;
+            width: 70%;
+        }
+        
+        /* ********************************************
+        Botón "Agéndate"
+        ******************************************** */
+        .agendate-white{
+            height: 0px;
+            margin: 40px 10px 10px 10px;
+        }
+
+        .agendate-white a{
+            border-radius: 30px;
+            border-style: solid;
+            background-color: inherit;
+            color: #fff;
+            padding: 5px 15px;
+            margin: 10px 10px;
+            text-transform: uppercase;
+            text-decoration: none;
+            width: 160px;
+        }
+        .agendate-green{
+            height: 0px;
+            margin: 15px 10px 20px 10px;
+        }
+
+        .agendate-green a{
+            border-radius: 30px;
+            background-color: #bfd732;
+            color: #fff;
+            padding: 5px 15px;
+            margin: 10px 10px;
+            text-transform: capitalize;
+            text-decoration: none;
+            width: 160px;
+        }
+
+        /*
+        .agendate a:hover{
+            background-color: #2c2ce9 !important;
+            border: 2px solid #fff !important;
+        }
+        */
+
+        /* ********************************************
+        Footer section - Social media and copy right text
+        ******************************************** */
+        .globant-logo-footer{
+            margin: 0px 0px 20px 0px;
+        }
+
+        .social-media{
+            margin:12px 15px 0px 0px;
+            max-height: 50px;
+            max-width: 50px;
+            display: inline-flex;
+        }
+        
+        /*
+        * [title="social-box"]:hover{
+            background-color: #08a8ec;
+            border-radius: 100%;
+            height: 34px;
+            width: 35px;
+        }
+        
+        .social-media:hover{
+            background-color: #08a8ec;
+            border-radius: 100%;
+            height: 34px;
+            width: 35px;
+        }
+        */
+        .copy-right{
+            color: #FFFFFF;
+            font-family: Raleway,Helvetica,sans-serif; 
+            font-size: 0.68rem;
+            line-height: normal;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="content">
+        <div id="header">
+            <div>
+                <img src="https://statics.globant.com/production/public/2020-04/globant-light-bg-color%402x%20%282%29.png" class="company-logo" alt="Globant logo">
+                <p class="main-title">Tech talks</p>
+                <p class="main-title">QE-COPE</p>
+                <!--
+                <img src="https://ci6.googleusercontent.com/proxy/KGln9EvJV6lg_rJMX0Ps7KuemPicTr3ch1EKg-TlBUO45OvzNxcXgyL5hcNQ002ud9Z-qZM6Idf2XSvgk5R6c0dTFk7sIqdY5WAUSmnAgUUA-yZJKWcQ=s0-d-e1-ft#https://communications.globant.com/Comm/Corporate/GameofPods/glb.png" alt="Globant logo">
+                -->
+            </div>
+
+            <div>
+                <p class="sub-title"> Conoce las <br> charlas que tenemos programadas para ti!</p>
+                <img src="https://raw.githubusercontent.com/wilmer-poveda/QE-communications/main/public-images/quality_Engineering_white.png" class ="qe-logo" alt="Quality Engineering logo">
+                
+                <img src="https://raw.githubusercontent.com/wilmer-poveda/QE-communications/main/public-images/COPE-logo-black-no-tagline.png" class="qe-logo" alt="COPE logo">
+            </div>
+        </div>
+        <table id="table-content" cellspacing="0" cellpadding="0">
+            <thead>
+                <tr>
+                    <th colspan="2">
+                        <h1>TECH TALKS 2023 - Febrero</h1>
+                        <p class="table-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="speaker-content">
+                            <div class="speaker-img">
+                                <!--<div class="speaker-border">-->
+                                    <img alt="speaker name" src="https://avatarmaker.net/images/1.png">
+                                <!--</div>-->
+                                <h2>Speaker Name</h2>
+                                <span>QA SSr. Adv</span>
+                            </div>
+                        
+                            <div class="tech-description">
+                                <h1>Tech Talk topic</h1>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                <p class="table-text">Martes, 24 de Mayo</p>
+                                <p class="table-text">04:00 PM (COL)</p>
+                                <div class="agendate-green">
+                                    <a href="https://www.globant.com/"> Regístrate  &#128197</a>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="speaker-content">
+                            <div class="speaker-img">
+                                <img alt="speaker name" src="https://avatarmaker.net/images/6.png">
+                                <h2>Speaker Name</h2>
+                                <span>TAE Sr.</span>
+                            </div>
+
+                            <div class="tech-description">
+                                <h1>Tech Talk topic</h1>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <p class="table-text">Martes, 24 de Julio</p>
+                                <p class="table-text">04:00 PM (COL)</p>
+                                <div class="agendate-green">
+                                    <a href="https://www.globant.com/"> Regístrate  &#128197</a>
+                                </div>
+                            </div>
+                        </div>
+                    </td> 
+                </tr>
+                <tr>
+                    <td>
+                        <div class="speaker-content">
+                            
+                            <div class="speaker-img">
+                                <img alt="speaker name" src="https://www.lunaii-dollmaker.com/images/downloads/avatars/100//1.png">
+                                <h2>Speaker Name</h2>
+                                <span>Dev Sr.</span>
+                            </div>
+                            <div class="tech-description">
+                                <h1>Tech Talk topic</h1>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <p class="table-text">Martes, 24 de Septiembre</p>
+                                <p class="table-text">04:00 PM (COL)</p>
+                                <div class="agendate-green">
+                                    <a href="https://www.globant.com/"> Regístrate  &#128197</a>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="speaker-content">
+                            <div class="speaker-img">
+                                <img alt="speaker name" src="https://www.lunaii-dollmaker.com/images/downloads/avatars/100//17.png">
+                                <h2>Speaker Name</h2>
+                                <span>QA Sr.</span>
+                            </div>
+
+                            <div class="tech-description">
+                                <h1>Tech Talk topic</h1>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <p class="table-text">Martes, 24 de Diciembre</p>
+                                <p class="table-text">04:00 PM (COL)</p>
+                                <div class="agendate-green">
+                                    <a href="https://www.globant.com/"> Regístrate  &#128197</a>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <!--
+                <tr>
+                    <td>
+                        <div class="agendate-white">
+                            <a href="https://www.globant.com/"> Agéndate  &#128197</a>
+                        </div>
+                    </td>
+                </tr>
+            -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">
+                        <img src="https://ci6.googleusercontent.com/proxy/KGln9EvJV6lg_rJMX0Ps7KuemPicTr3ch1EKg-TlBUO45OvzNxcXgyL5hcNQ002ud9Z-qZM6Idf2XSvgk5R6c0dTFk7sIqdY5WAUSmnAgUUA-yZJKWcQ=s0-d-e1-ft#https://communications.globant.com/Comm/Corporate/GameofPods/glb.png" class="globant-logo-footer" title="let's go there">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="social-media" title="social-box">
+                            <a href="https://www.facebook.com/Globant" target="_blank" rel="noopener">
+                                <img src="https://ci4.googleusercontent.com/proxy/93T2jK-kA8VDjTWLQu1qt0PoKuwD1SpvoJMfKUX85RObO1djwEdUBIua8NIJpedJXkLglV-P9jbKB27ZIyc3IR6gq0nmzFug7vE1zoyHFWtYoisxn6s=s0-d-e1-ft#https://communications.globant.com/Comm/footer2017/facebook2017.png" alt="facebook" width="35" height="35" title="let's go there">
+                            </a>
+                        </div>
+                        <div class="social-media">
+                            <a href="http://www.twitter.com/globant" target="_blank" rel="noopener">
+                                <img src="https://ci6.googleusercontent.com/proxy/ZA6j9H4xuyfE6NX9BHqgLslLmiZaQLllLptkHI83I8NRHOOMKUL8wJPwvtDyQVdJMEydlOLN8kjhGZZmvtgtlhaGSAQZSgwf-VmA5klhrtXIk_kngg=s0-d-e1-ft#https://communications.globant.com/Comm/footer2017/twitter2017.png" alt="twitter" width="35" height="35" title="let's go there">
+                              </a>
+                        </div>
+                        <div class="social-media">
+                            <a href="http://www.youtube.com/Globant" target="_blank" rel="noopener">
+                                <img src="https://ci3.googleusercontent.com/proxy/1JAaV29DDuKcaqMW1Sv6KGwYBSQGKkzSbieiLpVPm6wT4jlqq5dnX27jCCXiduCN2OCH73h4k4hzMA7F6n2cdPArFF4a1oHgGCv_bA_jGlqk1FJlNA=s0-d-e1-ft#https://communications.globant.com/Comm/footer2017/youtube2017.png" alt="youtube" width="35" height="35" title="let's go there">
+                              </a>
+                        </div>
+                        <div class="social-media">
+                            <a href="https://www.linkedin.com/company/globant" target="_blank" rel="noopener">
+                                <img src="https://ci5.googleusercontent.com/proxy/-J8w5kqYSJ3b7J5K7ljOEk2ohBtq6SJz62SbhuYEJlE-qRQI04AjQT7w_Bck2jhThoVd6zVRNLEqo0cU_4jpdkEYP26F3euE0q4TU7PPzDSVaAysUeY=s0-d-e1-ft#https://communications.globant.com/Comm/footer2017/linkedin2017.png" alt="linkedin" width="35" height="35" title="let's go there">
+                              </a>
+                        </div>
+                        <div class="social-media">
+                            <a href="https://www.instagram.com/globantpics/" target="_blank" rel="noopener">
+                                <img src="https://ci5.googleusercontent.com/proxy/WhHpjA-bo3RdUvaEqfQwjLh_qWNuQUO_xsdD-XqWSMUqi5-24DvAtFKWHJZJTktK1FOzCXXOVxLzBO5e44uT2jXXp6gHvunFKZ7Cvjfeu0e6ILtLD7mT=s0-d-e1-ft#https://communications.globant.com/Comm/footer2017/instagram2017.png" alt="instagram" width="35" height="35" title="let's go there">
+                              </a>
+                        </div>
+                        <div class="social-media">
+                            <a href="http://www.globant.com/" target="_blank" rel="noopener">
+                                <img src="https://ci5.googleusercontent.com/proxy/ph3h5Z088uEBUPHQpAKjPY9Dh8e82EzYl-RNuTa_gjVorZ-bQ604YtdxttO6G8c0saGtRSHCeMCbgCxrDXCzvRntTonox4INFjaErcMA-l7DVLG7yw=s0-d-e1-ft#https://communications.globant.com/Comm/footer2017/globant2017.png" alt="globant" width="35" height="35" title="let's go there">
+                              </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="copy-right">&copy 2023 Globant. All rights reserved</p>
+                        <p class="copy-right">This is a corporate communication from Globant. <br> If you are not sure about receiving our emails, <a href="https://communications.globant.com/Comm/Studios/QualityEngineering/%7B%7BUnsubscribe%7D%7D" target="_blank" style="color: #FFFFFF;" rel="noopener">unsubscribe</a> here from all our internal communications.
+                        </p>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
