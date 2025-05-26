@@ -43,8 +43,8 @@ A file path describes the location of a file in a web site's folder structure.
     - **{folderName}:** belongs to the folder name differente from root
     - **{image_name}:** belongs to the name of hte image (.png or .jpg)
 > [!NOTE]
-> https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/public-images/{filder_name/image_name} \
-> **i.e:** https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/public-images/headers/Karate_workshop.png
+> - https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/public-images/{filder_name/image_name} \
+> - **i.e:** https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/public-images/headers/Karate_workshop.png
 
 
 ## How you can access to your template:
@@ -54,8 +54,9 @@ A file path describes the location of a file in a web site's folder structure.
     - **{folderName}:** belongs to the folder name differente from root
     - **{templateName.html}:** belongs to the template name you desire to publish. Remember that it should not have blank spaces
 > [!NOTE]
-> https://wilmer-poveda.github.io/QE-communications/templates/{year}/{folderName}/{templateName.html} \
-> **i.e:** https://wilmer-poveda.github.io/QE-communications/templates/2024/EncuestaTechTalk_FEBWIL.html
+> - https://wilmer-poveda.github.io/QE-communications/templates/{year}/{folderName}/{templateName.html} \
+> - **i.e:** https://wilmer-poveda.github.io/QE-communications/templates/2024/EncuestaTechTalk_FEBWIL.html
+
 
 > [!TIP]
 > Remember that the template name should not have spaces in blank.\
