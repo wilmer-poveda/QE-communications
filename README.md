@@ -53,7 +53,6 @@ A file path describes the location of a file in a web site's folder structure.
     - **{year}:** belongs to the current year of the template
     - **{folderName}:** belongs to the folder name differente from root
     - **{templateName.html}:** belongs to the template name you desire to publish. Remember that it should not have blank spaces
-> [!NOTE]
 > - https://wilmer-poveda.github.io/QE-communications/templates/{year}/{folderName}/{templateName.html}
 > - **i.e:** https://wilmer-poveda.github.io/QE-communications/templates/2024/EncuestaTechTalk_FEBWIL.html
 
