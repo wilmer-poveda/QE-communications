@@ -23,7 +23,8 @@ QE-communications/
 ```
 
 ## How we can you get an image from github.
-There are two options to use an image uploaded to GitHub.
+There are two options to use an image uploaded to GitHub, "Relative Links" or "URL":
+
 ### 1. Relative Links
 A file path describes the location of a file in a web site's folder structure.
 
