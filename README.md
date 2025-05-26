@@ -2,7 +2,7 @@
 
 Consider the following structure to navigate this repository
 ```
-my-project/
+QE-communications/
 │
 ├── public-images/  -- It will be deprecated in 2026
 ├── assets/
