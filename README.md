@@ -29,8 +29,8 @@ There are two options to use an image uploaded to GitHub, "Relative Links" or "U
 A file path describes the location of a file in a web site's folder structure.
 
 ```
-<img src="/public-images/picture.jpg">  The "picture.jpg" file is located in the images folder at the root of the current web
-<img src="../../../picture.jpg">        The "picture.jpg" file is located in the folder three level up from the current folder
+<img src="/assets/images/headers/picture.jpg">  The "picture.jpg" file is located in the images folder at the root of the current web
+<img src="../../../picture.jpg">                The "picture.jpg" file is located in the folder three level up from the current folder
 ```
 
 ### 2. URL 
