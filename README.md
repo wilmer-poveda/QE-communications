@@ -19,8 +19,7 @@ my-project/
 │   └── 2025/
 │       └── templateName.html/
 │
-├── README.md
-└── .gitignore
+└── README.md
 ```
 
 ## How we can you get an image from github.
