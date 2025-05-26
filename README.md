@@ -1,19 +1,16 @@
 # QE-communications
-## How you can view an HTML page from github.
-https://htmlpreview.github.io/?
-
 
 ## How we can you get an image from github.
 There are two options to use an image uploaded to GitHub.
-### Relative Links
+### 1. Relative Links
 A file path describes the location of a file in a web site's folder structure.
 
 ```
-<img src="/public-images/picture.jpg">	 The "picture.jpg" file is located in the images folder at the root of the current web
-<img src="../../../picture.jpg">	     The "picture.jpg" file is located in the folder one level up from the current folder
+<img src="/public-images/picture.jpg">  The "picture.jpg" file is located in the images folder at the root of the current web
+<img src="../../../picture.jpg">        The "picture.jpg" file is located in the folder three level up from the current folder
 ```
 
-### URL 
+### 2. URL 
 1. Identify the folder where the desire image is located into "public-images" folder, like:
     - /headers
     - /speakers
@@ -40,3 +37,5 @@ A file path describes the location of a file in a web site's folder structure.
 > :white_check_mark:	 -> EncuestaTechTalkFEB.html\
 > :x:  -> Encuesta TechTalk FEB.html
     
+## How you can view an HTML page from github.
+https://htmlpreview.github.io/?
