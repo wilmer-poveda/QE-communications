@@ -42,8 +42,10 @@ A file path describes the location of a file in a web site's folder structure.
 2. Once the image location is identified, complete the image URL (folder/image) to be able to open it in a new tab
     - **{folderName}:** belongs to the folder name differente from root
     - **{image_name}:** belongs to the name of hte image (.png or .jpg)
-    > https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/public-images/{filder_name/image_name}
-    - **i.e:** https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/public-images/headers/Karate_workshop.png
+> [!NOTE]
+> https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/public-images/{filder_name/image_name}
+> **i.e:** https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/public-images/headers/Karate_workshop.png
+
 
 ## How you can access to your template:
 1. Identify the template location
@@ -51,8 +53,9 @@ A file path describes the location of a file in a web site's folder structure.
     - **{year}:** belongs to the current year of the template
     - **{folderName}:** belongs to the folder name differente from root
     - **{templateName.html}:** belongs to the template name you desire to publish. Remember that it should not have blank spaces
-    > https://wilmer-poveda.github.io/QE-communications/templates/{year}/{folderName}/{templateName.html}
-    - **i.e:** https://wilmer-poveda.github.io/QE-communications/templates/2024/EncuestaTechTalk_FEBWIL.html
+> [!NOTE]
+> https://wilmer-poveda.github.io/QE-communications/templates/{year}/{folderName}/{templateName.html}
+> **i.e:** https://wilmer-poveda.github.io/QE-communications/templates/2024/EncuestaTechTalk_FEBWIL.html
 
 > [!TIP]
 > Remember that the template name should not have spaces in blank.\
