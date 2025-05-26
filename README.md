@@ -8,9 +8,9 @@ QE-communications/
 ├── assets/
 │   ├── images/
 │   │   ├── headers/
-│   │   ├── photos/
+│   │   ├── speakers/
 │   │   ├── backgrounds/
-│   │   └── speakers/
+│   │   └── studio/
 │   └── css/
 │
 ├── templates/
@@ -34,10 +34,10 @@ A file path describes the location of a file in a web site's folder structure.
 ```
 
 ### 2. URL 
-1. Identify the folder where the desire image is located into "public-images" folder, like:
+1. Identify the folder where the desire image is located into "images" folder, like:
     - /headers
     - /speakers
-    - /others
+    - /studio
     - ...
 2. Once the image location is identified, complete the image URL (folder/image) to be able to open it in a new tab
     - **{folderName}:** belongs to the folder name differente from root
