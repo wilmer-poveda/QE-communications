@@ -8,9 +8,9 @@ There are two options to use an image uploaded to GitHub.
 ### Relative Links
 A file path describes the location of a file in a web site's folder structure.
 
-Path	Description
-<img src="/public-images/picture.jpg">	The "picture.jpg" file is located in the images folder at the root of the current web
-<img src="../../../picture.jpg">	The "picture.jpg" file is located in the folder one level up from the current folder
+
+> <img src="/public-images/picture.jpg">	The "picture.jpg" file is located in the images folder at the root of the current web\
+> <img src="../../../picture.jpg">	        The "picture.jpg" file is located in the folder one level up from the current folder
 
 ### URL 
 1. Identify the folder where the desire image is located into "public-images" folder, like:
@@ -34,8 +34,8 @@ Path	Description
     - **i.e:** https://wilmer-poveda.github.io/QE-communications/templates/2024/EncuestaTechTalk_FEBWIL.html
 
 > [!TIP]
-> Remember that the template name should not have spaces in blank.
-> :white_check_mark:	 -> Encuesta_TechTalk_FEB.html
-> :white_check_mark:	 -> EncuestaTechTalkFEB.html
-> :x:  -> Encuesta TechTalk FEB.html
+> Remember that the template name should not have spaces in blank.\
+> :white_check_mark:	 -> Encuesta_TechTalk_FEB.html\
+> :white_check_mark:	 -> EncuestaTechTalkFEB.html\
+> :x:  -> Encuesta TechTalk FEB.html\
     
