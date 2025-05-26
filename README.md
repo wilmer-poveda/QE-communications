@@ -1,6 +1,6 @@
 # QE-communications
 
-Consider the Following structure to surface in this repository 
+Consider the following structure to navigate this repository
 ```
 my-project/
 │
@@ -14,8 +14,10 @@ my-project/
 │   └── css/
 │
 ├── templates/
-│   ├── 2025/
-│   │   └── templateName.html/
+│   ├── 2023/
+│   ├── 2024/
+│   └── 2025/
+│       └── templateName.html/
 │
 ├── README.md
 └── .gitignore
