@@ -8,16 +8,17 @@ There are two options to use an image uploaded to GitHub.
 ### Relative Links
 A file path describes the location of a file in a web site's folder structure.
 
-
-> <img src="/public-images/picture.jpg">	The "picture.jpg" file is located in the images folder at the root of the current web\
-> <img src="../../../picture.jpg">	        The "picture.jpg" file is located in the folder one level up from the current folder
+```
+<img src="/public-images/picture.jpg">	 The "picture.jpg" file is located in the images folder at the root of the current web
+<img src="../../../picture.jpg">	     The "picture.jpg" file is located in the folder one level up from the current folder
+```
 
 ### URL 
 1. Identify the folder where the desire image is located into "public-images" folder, like:
     - /headers
     - /speakers
     - /others
-    -...
+    - ...
 2. Once the image location is identified, complete the image URL (folder/image) to be able to open it in a new tab
     - **{folderName}:** belongs to the folder name differente from root
     - **{image_name}:** belongs to the name of hte image (.png or .jpg)
@@ -37,5 +38,5 @@ A file path describes the location of a file in a web site's folder structure.
 > Remember that the template name should not have spaces in blank.\
 > :white_check_mark:	 -> Encuesta_TechTalk_FEB.html\
 > :white_check_mark:	 -> EncuestaTechTalkFEB.html\
-> :x:  -> Encuesta TechTalk FEB.html\
+> :x:  -> Encuesta TechTalk FEB.html
     
