@@ -43,7 +43,7 @@ A file path describes the location of a file in a web site's folder structure.
     - **{folderName}:** belongs to the folder name differente from root
     - **{image_name}:** belongs to the name of hte image (.png or .jpg)
 > [!NOTE]
-> - https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/public-images/{filder_name/image_name} \
+> - https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/public-images/{filder_name/image_name}
 > - **i.e:** https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/public-images/headers/Karate_workshop.png
 
 
@@ -54,7 +54,7 @@ A file path describes the location of a file in a web site's folder structure.
     - **{folderName}:** belongs to the folder name differente from root
     - **{templateName.html}:** belongs to the template name you desire to publish. Remember that it should not have blank spaces
 > [!NOTE]
-> - https://wilmer-poveda.github.io/QE-communications/templates/{year}/{folderName}/{templateName.html} \
+> - https://wilmer-poveda.github.io/QE-communications/templates/{year}/{folderName}/{templateName.html}
 > - **i.e:** https://wilmer-poveda.github.io/QE-communications/templates/2024/EncuestaTechTalk_FEBWIL.html
 
 
@@ -64,5 +64,6 @@ A file path describes the location of a file in a web site's folder structure.
 > :white_check_mark:	 -> EncuestaTechTalkFEB.html\
 > :x:  -> Encuesta TechTalk FEB.html
     
+
 ## How you can view an HTML page from github.
 https://htmlpreview.github.io/?
