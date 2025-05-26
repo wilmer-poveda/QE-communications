@@ -1,5 +1,26 @@
 # QE-communications
 
+Consider the Following structure to surface in this repository 
+```
+my-project/
+│
+├── public-images/  -- It will be deprecated in 2026
+├── assets/
+│   ├── images/
+│   │   ├── headers/
+│   │   ├── photos/
+│   │   ├── backgrounds/
+│   │   └── speakers/
+│   └── css/
+│
+├── templates/
+│   ├── 2025/
+│   │   └── templateName.html/
+│
+├── README.md
+└── .gitignore
+```
+
 ## How we can you get an image from github.
 There are two options to use an image uploaded to GitHub.
 ### 1. Relative Links
