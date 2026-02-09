@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wireframe Template (650px)</title>
+
+    <!-- Optional web font; swap for your brand typeface -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --max-width: 650px;
+            --bg: #ffffff;
+            --ink: #222;
+            --muted: #6b7280;
+            /* neutral text */
+            --line: #e5e7eb;
+            /* borders */
+            --accent: #2563eb;
+            /* button/link */
+            --card: #f9fafb;
+            /* card bg */
+            --radius: 16px;
+            /* rounded right edges */
+            --shadow: 0 8px 24px rgba(0, 0, 0, .06);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            color: var(--ink);
+            background: #f3f4f6;
+            /* page background */
+            line-height: 1.55;
+        }
+
+        .wrap {
+            max-width: var(--max-width);
+            width: 100%;
+            margin: 24px auto 40px;
+            background: var(--bg);
+            border: 1px solid var(--line);
+            border-radius: 0 var(--radius) var(--radius) 0;
+            /* rounded on the right side */
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        /* HERO */
+        .hero {
+            width: 100%;
+            aspect-ratio: 13 / 4;
+            /* approximate hero banner proportion */
+            background: #ddd center/cover no-repeat;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* SECTION ROWS (content + sidebar avatar/button) */
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 168px;
+            gap: 16px;
+            padding: 20px 20px;
+            border-bottom: 8px solid var(--line);
+            border-radius: 0px 50px 50px 0px;
+            background: var(--bg);
+        }
+
+        /*
+    .row:last-of-type{
+      border-bottom: none;
+    }
+      */
+        .card {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 16px;
+        }
+
+        .card h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.05rem;
+            font-weight: 600;
+        }
+
+        .card p {
+            margin: 0;
+            color: var(--muted);
+        }
+
+        .side {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 12px;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            background: #eee center/cover no-repeat;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .cta {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            padding: 10px 12px;
+            border-radius: 8px;
+            background: var(--card);
+            border: 1px solid var(--line);
+            color: var(--ink);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .cta:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* FINAL MIXED ROW (large content left, bigger empty area right + small CTA) */
+        .row--wide-right {
+            grid-template-columns: 1fr 200px;
+            align-items: start;
+        }
+
+        .right-pad {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 12px;
+            padding-top: 8px;
+        }
+
+        .right-pad .mini-cta {
+            align-self: flex-end;
+            width: 100%;
+            text-align: center;
+            padding: 10px 12px;
+            border-radius: 8px;
+            background: var(--card);
+            border: 1px solid var(--line);
+            color: var(--ink);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .right-pad .mini-cta:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* FOOTER */
+        .footer {
+            text-align: center;
+            color: var(--muted);
+            font-size: 12px;
+            padding: 20px;
+            /*border-top: 1px solid var(--line);*/
+            background: var(--bg);
+        }
+
+        .footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* OUT-OF-CARD STANDALONE BUTTON (under notebook) */
+        .below {
+            max-width: var(--max-width);
+            width: 100%;
+            margin: 16px auto 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .below .standalone {
+            display: inline-block;
+            min-width: 160px;
+            text-align: center;
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 10px 16px;
+            color: var(--ink);
+            text-decoration: none;
+            box-shadow: var(--shadow);
+            font-weight: 600;
+        }
+
+        .below .standalone:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* MOBILE STACKING */
+        @media (max-width: 700px) {
+
+            .row,
+            .row--wide-right {
+                grid-template-columns: 1fr;
+                /* stack */
+            }
+
+            .side,
+            .right-pad {
+                align-items: stretch;
+            }
+
+            .cta,
+            .right-pad .mini-cta {
+                width: 100%;
+            }
+
+            .wrap {
+                border-radius: 0;
+                /* edge-to-edge on mobile if desired */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="wrap" role="main">
+
+        <!-- HEADER -->
+        <div class="hero" aria-label="Hero image">
+            <img src="https://picsum.photos/1200/400" alt="Random hero image placeholder">
+        </div>
+
+        <!-- ROW 1 -->
+        <section class="row" aria-labelledby="sec1-title">
+            <article class="card">
+                <h3 id="sec1-title">Lorem Ipsum Solem</h3>
+                <p>
+                    Lorem ipsum solem dolor sit amet, consectetur adipiscing elit. Sed posuere,
+                    ligula at varius tincidunt, ante velit faucibus massa, at mollis magna magna at dui.
+                    Integer vulputate, dolor non feugiat eleifend, urna nulla luctus sem, sed luctus orci nunc in risus.
+                </p>
+            </article>
+            <aside class="side" aria-label="Profile and action">
+                <div class="avatar">
+                    <img src="https://picsum.photos/240" alt="Circular image placeholder">
+                </div>
+                <a class="cta" href="#">Learn More</a>
+            </aside>
+        </section>
+
+        <!-- ROW 2 -->
+        <section class="row" aria-labelledby="sec2-title">
+            <article class="card">
+                <h3 id="sec2-title">Lorem Ipsum Solem</h3>
+                <p>
+                    Lorem ipsum solem dolor sit amet, consectetur adipiscing elit. Curabitur in feugiat augue.
+                    Praesent dignissim, nunc id pulvinar rhoncus, sapien mauris facilisis erat, sit amet gravida
+                    velit arcu ac lectus.
+                </p>
+            </article>
+            <aside class="side">
+                <div class="avatar">
+                    <img src="https://picsum.photos/241" alt="Circular image placeholder">
+                </div>
+                <a class="cta" href="#">Details</a>
+            </aside>
+        </section>
+
+        <!-- ROW 3 -->
+        <section class="row" aria-labelledby="sec3-title">
+            <article class="card">
+                <h3 id="sec2-title">Lorem Ipsum Solem</h3>
+                <p>
+                    Lorem ipsum solem dolor sit amet, consectetur adipiscing elit. Curabitur in feugiat augue.
+                    Praesent dignissim, nunc id pulvinar rhoncus, sapien mauris facilisis erat, sit amet gravida
+                    velit arcu ac lectus.
+                </p>
+            </article>
+            <aside class="side">
+                <div class="avatar">
+                    <img src="https://picsum.photos/242" alt="Circular image placeholder">
+                </div>
+                <a class="cta" href="#">Details</a>
+            </aside>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer" role="contentinfo">
+            <!-- Standalone centered button under the main card -->
+            <div class="below">
+                <a class="standalone" href="#">Standalone Button</a>
+            </div>
+            <p>© 2026 Company. All rights reserved.</p>
+            <p>This is a corporate communication. If you’re unsure about receiving our emails,
+                <a href="#" aria-label="Unsubscribe link">unsubscribe here</a>.
+            </p>
+        </footer>
+
+    </main>
+</body>
+</html>
