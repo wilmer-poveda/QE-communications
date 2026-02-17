@@ -23,6 +23,20 @@
       /*background-color: #7f347b;*/
     }
 
+    #logos {
+      margin: -60px;
+      max-width: 650px;
+      margin-left: 10px;
+    }
+
+    img.imgs {
+      display: inline-grid;
+      width: 30%;
+      max-height: 50px;
+      padding: 5px 5px;
+      margin: auto;
+    }
+
     /* ********************************************
         Speaker cards
         ******************************************** */
@@ -112,14 +126,14 @@
       border-radius: 0px 0px 50px 0px;
     }
 
-    #header-img{
-      display: block; 
+    #header-img {
+      display: block;
       border-top-right-radius: 1.1rem;
       height: 415px;
       width: 100%;
     }
   </style>
-  
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-473SR56VF2"></script>
   <script>
@@ -136,8 +150,28 @@
       align="center">
       <thead>
         <td>
-          <img rel="preload" src="https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/assets/images/2026/Wilmer/Tech_Talk_Header_v1.png" alt="Tech Talk 2026" width="650" id="header-img">
+          <div class="hero" aria-label="Hero image">
+            <img rel="preload"
+              src="https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/assets/images/2026/Wilmer/Tech_Talk_Header_v1.png"
+              alt="Tech Talk 2026" width="650" id="header-img">
+          </div>
         </td>
+        <tr>
+          <td>
+            <div id="logos">
+              <img
+                src="https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/assets/images/studio/Quality_Engineering_full_white.png"
+                alt="QE Studio" class="imgs">
+
+              <img
+                src="https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/assets/images/studio/NOLAWhite.png"
+                alt="QE Logo" class="imgs">
+
+              <img src="https://statics.globant.com/production/public/2020-04/globant-light-bg-color%402x%20%282%29.png"
+                class="imgs">
+            </div>
+          </td>
+        </tr>
       </thead>
       <td style="background-color:#FFFFFA; padding: 0rem 0rem; text-align:center; font-size:15px; color:#53555a;">
         <table align="center" style="padding-top: 25px;" id="speaker-list">
@@ -154,7 +188,7 @@
                       usuario (UI) de una aplicación, comunidad o componente
                       para asegurar que cumple con los criterios de diseño,
                       estilo y usabilidad previamente establecidos. </p>
-                    <p class="table-text"> &#x1F5D3; Martes, 6 de Febrero  |  &#128348; 04:00 PM (COL)</p>
+                    <p class="table-text"> &#x1F5D3; Martes, 6 de Febrero | &#128348; 04:00 PM (COL)</p>
                     <div class="agendate-green">
                       <!--<a href="https://docs.google.com/forms/d/e/1FAIpQLSeN8G_sumW0NzeUCrIMz0Xphhxgx4cpKdQvZVVbB4O4LJ8mZA/viewform"
                         target="_blank" title="Regístrate"> Regístrate
@@ -184,7 +218,7 @@
                       usuario (UI) de una aplicación, comunidad o componente
                       para asegurar que cumple con los criterios de diseño,
                       estilo y usabilidad previamente establecidos. </p>
-                    <p class="table-text"> &#x1F5D3; Martes, 6 de Febrero  |  &#128348;  04:00 PM (COL)</p>
+                    <p class="table-text"> &#x1F5D3; Martes, 6 de Febrero | &#128348; 04:00 PM (COL)</p>
                     <div class="agendate-green">
                       <!--<a href="https://docs.google.com/forms/d/e/1FAIpQLSeN8G_sumW0NzeUCrIMz0Xphhxgx4cpKdQvZVVbB4O4LJ8mZA/viewform"
                         target="_blank" title="Regístrate"> Regístrate
@@ -219,8 +253,8 @@
                     <tr>
                       <td style="font-size: 11px; text-align: center; padding: 20px; color: #53555a;" align="center">
                         <img style="padding-bottom: 5px; height: 35px;"
-                        src="https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/public-images/headers/moni_bernal/logo_gb_00.png">
-                          <!--https://ci6.googleusercontent.com/proxy/KGln9EvJV6lg_rJMX0Ps7KuemPicTr3ch1EKg-TlBUO45OvzNxcXgyL5hcNQ002ud9Z-qZM6Idf2XSvgk5R6c0dTFk7sIqdY5WAUSmnAgUUA-yZJKWcQ=s0-d-e1-ft#https://communications.globant.com/Comm/Corporate/GameofPods/glb.png-->
+                          src="https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/public-images/headers/moni_bernal/logo_gb_00.png">
+                        <!--https://ci6.googleusercontent.com/proxy/KGln9EvJV6lg_rJMX0Ps7KuemPicTr3ch1EKg-TlBUO45OvzNxcXgyL5hcNQ002ud9Z-qZM6Idf2XSvgk5R6c0dTFk7sIqdY5WAUSmnAgUUA-yZJKWcQ=s0-d-e1-ft#https://communications.globant.com/Comm/Corporate/GameofPods/glb.png-->
                         <p class="copy-right">&copy 2026 Globant. All rights reserved</p>
                         <p class="copy-right">This is a corporate communication from Globant. <br> If you are not sure
                           about receiving our emails, <a

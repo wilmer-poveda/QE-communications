@@ -8,7 +8,8 @@
 
     <!-- Optional web font; swap for your brand typeface -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="https://communications.globant.com/Comm/favicon/images/favicon.png">
+    <link rel="shortcut icon" type="image/png"
+        href="https://communications.globant.com/Comm/favicon/images/favicon.png">
 
     <style>
         :root {
@@ -63,22 +64,6 @@
             /* approximate hero banner proportion */
             background: #ddd center/cover no-repeat;
         }
-        #qe-logo{
-            max-width: 199px;
-            height: 50px;
-            margin: auto;
-            position: absolute;
-            top: 380px;
-            background: #4251a575;
-        }
-        #qe-globant{
-            max-width: 199px;
-            height: 39px;
-            margin: 7px 0px 0px 430px;
-            position: absolute;
-            top: 380px;
-            background: #f27f1c57;
-        }
 
         .hero img {
             width: 100%;
@@ -86,6 +71,33 @@
             object-fit: cover;
             display: block;
             object-position: bottom;
+        }
+
+        /* Optional: Clear floats or use flexbox on the parent container */
+        #logos::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column-img {
+            width: 32%;
+            padding: 5px;
+            /* Adds a little space around images */
+            box-sizing: border-box;
+            vertical-align: bottom;
+            display: inline-block;
+        }
+
+        .column-img img {
+            max-width: 100%;
+            width: auto;
+            height: 50px;
+            display: block;
+            margin: auto;
+        }
+        .column-img:nth-child(3) img{
+            height: 38px;
         }
 
         /* SECTION ROWS (content + sidebar avatar/button) */
@@ -277,9 +289,21 @@
         <!-- HEADER -->
         <div class="hero" aria-label="Hero image">
             <!--<img src="https://picsum.photos/1200/400" alt="Random hero image placeholder">-->
-            <img src="https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/assets/images/studio/Quality_Engineering_full_white.png" alt="QE Logo" id="qe-logo">
             <img src="../../../assets/images/2026/Wilmer/Tech_Talk_Header_v1.png" alt="Tech Talk 2026">
-            <img src="https://statics.globant.com/production/public/2020-04/globant-light-bg-color%402x%20%282%29.png" id="qe-globant">
+            <div id="logos">
+                <div class="column-img">
+                    <img src="https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/assets/images/studio/Quality_Engineering_full_white.png"
+                        alt="QE Studio" id="left">
+                </div>
+                <div class="column-img">
+                    <img src="https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/assets/images/studio/NOLAWhite.png"
+                        alt="QE Logo" id="center">
+                </div>
+                <div class="column-img">
+                    <img src="https://statics.globant.com/production/public/2020-04/globant-light-bg-color%402x%20%282%29.png"
+                        id="right">
+                </div>
+            </div>
         </div>
 
         <!-- ROW 1 -->
@@ -350,4 +374,5 @@
 
     </main>
 </body>
+
 </html>
