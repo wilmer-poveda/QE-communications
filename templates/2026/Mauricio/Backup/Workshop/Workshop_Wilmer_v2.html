@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Workshops</title>
+  <meta name="viewport" content="width=device-width" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="shortcut icon" type="image/png" href="https://communications.globant.com/Comm/favicon/images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Yesteryear&display=swap');
+
+    .press-start-2p-regular {
+      font-family: "Press Start 2P", system-ui;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+
+    #header{
+      color: #fff;
+        font-family: 'Press Start 2P', system-ui;
+      font-weight: 400;
+      font-style: normal;    
+      font-size: 3rem;
+      display: table;
+      margin: auto;
+      padding-top: 34%;
+    }
+    #fondo {
+      font-family: 'Heebo', sans-serif;
+      min-width: 650px;
+      margin: 0px 0px;
+      /* page background */
+      line-height: 1.55;
+      /*background-image: url(https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/assets/images/2026/Wilmer/cyber-bg.jpg);
+      background-image:url(https://img.freepik.com/premium-photo/modern-tech-background-with-orange-blue-geometric-shapes_1185166-30705.jpg?semt=ais_hybrid&w=740&q=80);*/
+      background-repeat: round;
+      background-size: contain;
+      background-blend-mode: soft-light;
+      background-color: #879ed6;
+    }
+
+    #logos {
+      background-color: #2D3436;
+      height: 50px;
+      padding: 5px;
+      text-align: center;
+      width: 640px;
+    }
+
+    img.imgs {
+      display: inline-grid;
+      max-height: 30px;
+      padding: 5px 5px;
+      margin: auto;
+    }
+
+    /* ********************************************
+        Speaker cards
+        ******************************************** */
+    .speaker-content {
+      /*border: solid #432266;
+      margin: auto 10px auto 10px;*/
+      padding: 20px 20px;
+      background-color: #fffffc !important;
+      border-radius: 0px 0px 50px 0px;
+      font-family: hebbo, sans-serif;
+      text-align: center;
+      vertical-align: top;
+    }
+
+    h1,
+    .main-title {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .main-title {
+      font-size: 2rem;
+    }
+
+    .speaker-content h2 {
+      font-weight: 700;
+      font-size: 0.87rem;
+      margin-bottom: 5px;
+    }
+
+    .speaker-img {
+      background-color: #fff;
+      border-color: transparent !important;
+      display: inline-block;
+      min-height: 100px;
+      margin-top: 5%;
+      padding: 10px;
+      vertical-align: top;
+      width: 19%;
+    }
+
+    .speaker-img img {
+      border: solid 2px #fff;
+      border-radius: 100%;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      max-height: 100px;
+      max-width: 100px;
+      height: 100px;
+      width: 100px;
+      vertical-align: middle;
+    }
+
+    .speaker-border {
+      display: block;
+      position: sticky
+    }
+
+    .speaker-border:after {
+      content: '';
+      position: absolute;
+      top: -4px;
+      left: 3px;
+      right: 0px;
+      bottom: 0px;
+      background: red;
+      z-index: -1;
+      border-radius: 100%;
+      height: 113px;
+      width: 113px;
+    }
+
+    .tech-description {
+      background: #f2f2f2;
+      border-radius: 10px 10px 10px 10px;
+      display: inline-block;
+      font-size: 0.9rem;
+      line-height: 150% !important;
+      padding: 15px;
+      text-align: justify;
+      width: 70%;
+      border: 1px solid #e5e7eb;
+    }
+
+    #speaker-list tr td {
+      border-bottom: 8px solid #e6e7eb;
+      border-radius: 0px 0px 50px 0px;
+    }
+
+    #header-img {
+      display: block;
+      border-top-right-radius: 1.1rem;
+      height: 415px;
+      width: 100%;
+    }
+
+    .btn-agendate {
+      margin: auto;
+      width: 120px;
+      padding-bottom: 10px;
+    }
+
+    .btn-agendate a {
+      background: #2D3436;
+      border-radius: 0px 0px 10px 10px;
+      color: #fff;
+      padding: 5px 5px;
+      text-decoration: none;
+      border-bottom: solid 2px #999999;
+      border-right: solid 2px #999999;
+      border-left: solid 2px #999999;
+    }
+
+    .btn-agendate a:hover {
+      border-radius: 10px 10px !important;
+      border: solid 2px #999999 !important;
+    }
+  </style>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-473SR56VF2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-473SR56VF2');
+  </script>
+</head>
+
+<body>
+  <div id="fondo">
+    <table style="color: #53555a; font-size: medium; padding-top: 1.8rem;" width="650" cellspacing="0" cellpadding="0"
+      align="center">
+      <thead>
+        <td>
+          <div class="hero" aria-label="Hero image" style="background-size: cover; background-image: url(https://img.freepik.com/premium-photo/modern-tech-background-with-orange-blue-geometric-shapes_1185166-30705.jpg?semt=ais_hybrid&w=740&q=80); min-width: 650px; min-height: 400px;">
+          <p id="header" class="press-start-2p-regular">Workshops</p>
+            <!--
+            <img rel="preload"
+              src="https://img.freepik.com/premium-photo/modern-tech-background-with-orange-blue-geometric-shapes_1185166-30705.jpg?semt=ais_hybrid&w=740&q=80"
+              alt="Tech Talk 2026" width="650" id="header-img">
+          -->
+          </div>
+        </td>
+        <tr>
+          <td>
+            <div id="logos">
+              <img
+                src="https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/assets/images/studio/Quality_Engineering_full_white.png"
+                alt="QE Studio" class="imgs">
+
+              <img
+                src="https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/assets/images/studio/NOLAWhite.png"
+                alt="QE Logo" class="imgs">
+
+              <img src="https://statics.globant.com/production/public/2020-04/globant-light-bg-color%402x%20%282%29.png"
+                class="imgs">
+            </div>
+          </td>
+        </tr>
+      </thead>
+      <td style="background-color:#FFFFFA; padding: 0rem 0rem; text-align:center; font-size:15px; color:#53555a;">
+        <table align="center" style="padding-top: 25px;" id="speaker-list">
+          <tbody>
+            <tr>
+              <td>
+                <div class="speaker-content">
+                  <div class="tech-description">
+                    <h1>Look and Feel Aplicado a comunidades y componentes</h1>
+                    <p>Es una parte esencial del testing de software centrado en
+                      la experiencia del usuario (UX), El término "Look and
+                      Feel" (apariencia y sensación) aplicado al testing se
+                      refiere a la evaluación y prueba de la interfaz de
+                      usuario (UI) de una aplicación, comunidad o componente
+                      para asegurar que cumple con los criterios de diseño,
+                      estilo y usabilidad previamente establecidos. </p>
+                    <p class="table-text"> &#x1F5D3; Martes, 6 de Febrero | &#128348; 04:00 PM (COL)</p>
+                    <div class="agendate-green">
+                      <!--<a href="https://docs.google.com/forms/d/e/1FAIpQLSeN8G_sumW0NzeUCrIMz0Xphhxgx4cpKdQvZVVbB4O4LJ8mZA/viewform"
+                        target="_blank" title="Regístrate"> Regístrate
+                        &#x1f4c5</a>-->
+                    </div>
+                  </div>
+                  <div class="speaker-img">
+                    <!--<div class="speaker-border">-->
+                    <img rel="preload" alt="speaker name"
+                      src="https://raw.githubusercontent.com/wilmer-poveda/QE-communications/main/public-images/speaker_photos/QC_Cristian_Leonardo_Acero_Mancipe.png">
+                    <!--</div>-->
+                    <h2>Cristian Mancipe</h2>
+                    <span></span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="speaker-content">
+                  <div class="tech-description">
+                    <h1>Look and Feel Aplicado a comunidades y componentes</h1>
+                    <p>Es una parte esencial del testing de software centrado en
+                      la experiencia del usuario (UX), El término "Look and
+                      Feel" (apariencia y sensación) aplicado al testing se
+                      refiere a la evaluación y prueba de la interfaz de
+                      usuario (UI) de una aplicación, comunidad o componente
+                      para asegurar que cumple con los criterios de diseño,
+                      estilo y usabilidad previamente establecidos. </p>
+                    <p class="table-text"> &#x1F5D3; Martes, 6 de Febrero | &#128348; 04:00 PM (COL)</p>
+                    <div class="agendate-green">
+                      <!--<a href="https://docs.google.com/forms/d/e/1FAIpQLSeN8G_sumW0NzeUCrIMz0Xphhxgx4cpKdQvZVVbB4O4LJ8mZA/viewform"
+                        target="_blank" title="Regístrate"> Regístrate
+                        &#x1f4c5</a>-->
+                    </div>
+                  </div>
+                  <div class="speaker-img">
+                    <!--<div class="speaker-border">-->
+                    <img rel="preload" alt="speaker name"
+                      src="https://raw.githubusercontent.com/wilmer-poveda/QE-communications/main/public-images/speaker_photos/QC_Cristian_Leonardo_Acero_Mancipe.png">
+                    <!--</div>-->
+                    <h2>Cristian Leonardo Acero Mancipe</h2>
+                    <span></span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <table>
+                <tbody>
+                  <tr>
+                    <td align="center"></td>
+                  </tr>
+                </tbody>
+              </table><br>
+            </tr>
+            
+            <tr>
+              <td
+                style="background-color:#FFFFFA; padding: 0rem 0rem; text-align:center; font-size:15px; color:#53555a;">
+                <div class="btn-agendate">
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeUG0nfUo26gIaKet5WtP9GtT8tSqqWHHRgQQkcapArzPjsQg/viewform">
+                    &#x270E; Regístrate</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-bottom: 1.8rem;">
+                <table width="650" cellspacing="0" cellpadding="0" align="center"
+                  style="height: 190px; background-color: #fffffa; border-bottom-right-radius: 1.1rem; border-bottom-left-radius: 1.1rem">
+                  <tbody>
+                    <tr>
+                      <td style="font-size: 11px; text-align: center; padding: 20px; color: #53555a;" align="center">
+                        <img style="padding-bottom: 5px; height: 35px; margin-left: 25px"
+                          src="https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/public-images/headers/moni_bernal/logo_gb_00.png">
+                        <!--https://ci6.googleusercontent.com/proxy/KGln9EvJV6lg_rJMX0Ps7KuemPicTr3ch1EKg-TlBUO45OvzNxcXgyL5hcNQ002ud9Z-qZM6Idf2XSvgk5R6c0dTFk7sIqdY5WAUSmnAgUUA-yZJKWcQ=s0-d-e1-ft#https://communications.globant.com/Comm/Corporate/GameofPods/glb.png-->
+                        <p class="copy-right">&copy 2026 Globant. All rights reserved</p>
+                        <p class="copy-right">This is a corporate communication from Globant. <br> If you are not sure
+                          about receiving our emails, <a
+                            href="https://communications.globant.com/Comm/Studios/QualityEngineering/%7B%7BUnsubscribe%7D%7D"
+                            target="_blank" style="color: #53555a;" rel="noopener">unsubscribe</a> here from all our
+                          internal communications.</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+  </div>
+  <br>
+
+</body>
+
+</html>
