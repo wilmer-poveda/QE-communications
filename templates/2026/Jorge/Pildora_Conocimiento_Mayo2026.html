@@ -96,20 +96,7 @@
               <hr style="border: 0; border-top: 1px solid #eee;">
             </td>
           </tr>
-
-          <!-- Contenido: Píldora 2 -->
-          <tr>
-            <td style="padding: 40px 30px;">
-              <h2 style="color: #2D3436; margin: 0 0 15px 0; font-size: 22px;">💻 Where does it come from?</h2>
-              <p style="color: #636e72; line-height: 1.6; font-size: 16px; margin-bottom: 20px;">
-             Esta capa normativa actúa como la constitución de calidad del programa y establece los criterios objetivos de aceptación para eliminar cualquier interpretación subjetiva sobre el correcto funcionamiento de todo el ecosistema. Por un lado, la norma <strong>ISO/IEC 25010 (Calidad del Producto de Software)</strong> rige la validación de las aplicaciones, frentes periféricos e interfaces y capas intermedias, priorizando la Adecuación Funcional, la Compatibilidad (Interoperabilidad) entre componentes, la Mantenibilidad —mediante la inyección de identificadores de correlación únicos— y la Fiabilidad (Tolerancia a fallos y Disponibilidad) mediante lógica de disrupción dirigida (<em>Circuit Breaker</em>). Por otro lado, la norma <strong>ISO/IEC 25012 / 25102 (Calidad de Datos)</strong> gobierna de forma estricta los frentes de extracción masiva (<em>Migración</em>), almacenamiento intermedio y salidas de información, imponiendo un margen de error del 0% bajo las características de Exactitud financiera, Completitud de poblaciones de datos congeladas por lotes (<em>Batch IDs</em>), Consistencia (unicidad del dato renderizado de forma idéntica en toda la arquitectura) y Validez frente a layouts normativos.
-            </p>
-
-               <p style="color: #636e72; line-height: 1.6; font-size: 16px; margin-bottom: 20px;">
-Para habilitar de forma efectiva el enfoque de pruebas tempranas, el marco de gobierno establece en el <strong><em>Definition of Ready</em> (DoR)</strong> que las especificaciones de diseño técnico deben estar formalizadas y documentadas en código antes de iniciar el desarrollo. Específicamente para los frentes de satélites e integraciones, esto se logra mediante la adopción obligatoria de la <strong>Ingeniería de Contratos</strong>, la cual exige especificaciones para interacciones síncronas tradicionales (<em>API to API</em>), contratos para comunicaciones asíncronas basadas en eventos (<em>Event-Driven</em>) y mapas que modelen la secuencia lógica y el encadenamiento de dependencias entre múltiples servicios independientes. Asimismo, se incorporan contratos de modificación de especificaciones que permiten alterar de forma dinámica los servidores, parámetros o inyectar entornos simulados según la fase del ciclo (Desarrollo, QA, UAT), garantizando la autonomía del equipo de calidad ante dependencias externas bloqueantes sin alterar el diseño limpio original de la solución. </p>
-              
-            
-        <!-- IMAGEN 2: Capas de Validación Técnica -->
+      <!-- IMAGEN 1: Capas de Validación Técnica -->
         <div class="img-container">
             <svg width="700" height="160" viewBox="0 0 700 160" fill="none" xmlns="http://w3.org">
                 <rect width="700" height="160" rx="8" fill="#F8FAFC"/>
@@ -142,6 +129,30 @@ Para habilitar de forma efectiva el enfoque de pruebas tempranas, el marco de go
             </td>
           </tr>
 
+          <!-- Contenido: Píldora 2 -->
+          <tr>
+            <td style="padding: 40px 30px;">
+              <p style="color: #636e72; line-height: 1.6; font-size: 16px; margin-bottom: 20px;">
+             Esta capa normativa actúa como la constitución de calidad del programa y establece los criterios objetivos de aceptación para eliminar cualquier interpretación subjetiva sobre el correcto funcionamiento de todo el ecosistema. Por un lado, la norma <strong>ISO/IEC 25010 (Calidad del Producto de Software)</strong> rige la validación de las aplicaciones, frentes periféricos e interfaces y capas intermedias, priorizando la Adecuación Funcional, la Compatibilidad (Interoperabilidad) entre componentes, la Mantenibilidad —mediante la inyección de identificadores de correlación únicos— y la Fiabilidad (Tolerancia a fallos y Disponibilidad) mediante lógica de disrupción dirigida (<em>Circuit Breaker</em>). Por otro lado, la norma <strong>ISO/IEC 25012 / 25102 (Calidad de Datos)</strong> gobierna de forma estricta los frentes de extracción masiva (<em>Migración</em>), almacenamiento intermedio y salidas de información, imponiendo un margen de error del 0% bajo las características de Exactitud financiera, Completitud de poblaciones de datos congeladas por lotes (<em>Batch IDs</em>), Consistencia (unicidad del dato renderizado de forma idéntica en toda la arquitectura) y Validez frente a layouts normativos.
+            </p>
+
+               <p style="color: #636e72; line-height: 1.6; font-size: 16px; margin-bottom: 20px;">
+Para habilitar de forma efectiva el enfoque de pruebas tempranas, el marco de gobierno establece en el <strong><em>Definition of Ready</em> (DoR)</strong> que las especificaciones de diseño técnico deben estar formalizadas y documentadas en código antes de iniciar el desarrollo. Específicamente para los frentes de satélites e integraciones, esto se logra mediante la adopción obligatoria de la <strong>Ingeniería de Contratos</strong>, la cual exige especificaciones para interacciones síncronas tradicionales (<em>API to API</em>), contratos para comunicaciones asíncronas basadas en eventos (<em>Event-Driven</em>) y mapas que modelen la secuencia lógica y el encadenamiento de dependencias entre múltiples servicios independientes. Asimismo, se incorporan contratos de modificación de especificaciones que permiten alterar de forma dinámica los servidores, parámetros o inyectar entornos simulados según la fase del ciclo (Desarrollo, QA, UAT), garantizando la autonomía del equipo de calidad ante dependencias externas bloqueantes sin alterar el diseño limpio original de la solución. </p>
+              
+            
+    <p>Una vez estabilizado el diseño, la estrategia operativa evoluciona hacia una <strong>fase técnica headless y automatizada</strong> integrada en el pipeline de despliegue. En la capa del frontend de las aplicaciones periféricas, se evalúa la coexistencia de múltiples componentes y microfrontends alojados en un mismo contenedor o <em>Shell</em>, ejecutando revisiones de regresión visual y aislando tokens en memoria para validar la no colisión de estilos. En la capa del backend y del middleware de servicios, se verifican contratos en tiempo real de forma masiva ante cualquier cambio de código, mientras que la ingeniería de rendimiento somete al sistema a pruebas de carga sostenida e inyección de fallos técnicos en pre-producción (UAT), certificando que el orquestador resguarde mensajes en colas de error (<em>Dead Letter Queues - DLQ</em>) ante ralentizaciones del servidor y cumpla estrictamente con los SLAs del negocio.</p>
+
+        <p>Finalmente, el gobierno del dato y la migración masiva se certifican mediante una <strong>estrategia de reconciliación automatizada por capas en el almacén de datos</strong> (<em>Medallion Quality</em>), erradicando los muestreos ineficientes de registros. El proceso se rige por un motor automático de cuatro niveles que audita la fidelidad del conteo bruto en la ingesta inicial, ejecuta perfilamiento de datos (<em>Data Profiling</em>) automáticos para detectar nulos o duplicados, verifica la consistencia de catálogos y llaves foráneas, y cierra el ciclo analizando de forma directa los logs de carga provistos por el sistema receptor. Estos hallazgos son clasificados en una Matriz de Análisis de Causa Raíz (RCA) para delimitar las responsabilidades de calidad entre la data fuente y el proceso de transformación (ETL), gartantizando un despliegue seguro, predecible y alineado con altos estándares internacionales de arquitectura de software.</p>
+
+        <div class="footer-actions">
+            <p><strong>Próximos pasos recomendados para avanzar con los entregables técnicos:</strong></p>
+            <ul class="bullet-list">
+                <li>Diseñar la <strong>plantilla de criterios DoR / DoD</strong> unificada para las historias de usuario de integraciones síncronas.</li>
+                <li>Estructurar el formato de la <strong>Matriz de Análisis de Causa Raíz (RCA)</strong> para la clasificación de errores de migración.</li>
+                <li>Definir los <strong>criterios de suspensión y reanudación</strong> específicos para el entorno de UAT.</li>
+            </ul>
+        </div>
+    
           <!-- Footer -->
           <tr>
             <td>
