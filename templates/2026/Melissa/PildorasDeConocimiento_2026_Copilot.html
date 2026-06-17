@@ -50,7 +50,7 @@
                         <br><br>
 
                         <center>
-                            <img src="https://wilmer-poveda.github.io/QE-communications/assets/images/2026/Melissa/pildora_tips_camino_a_un_feedback_alta_calidad.png"
+                            <img src="https://wilmer-poveda.github.io/QE-communications/assets/images/2026/Melissa/Pildora_Copilot.png"
                                  width="100%"
                                  height="auto"
                                  alt="Guía Feedback"
@@ -61,244 +61,81 @@
                         <div style="text-align: center; width: 100%; font-weight: 500;">
                                 <h2>🧠 Copilot como aliado en el proceso de Testing</h2>
 
-    <p align="justify">🎯 <b>¿Por qué es importante?</b></p>
+<p align="justify">🎯 <b>¿Por qué es importante?</b></p>
 
 <p align="justify">
 En los equipos de calidad, gran parte del esfuerzo se invierte en actividades como el análisis de requisitos, diseño de casos de prueba, automatización, documentación de defectos y validaciones de accesibilidad.
 </p>
 
 <p align="justify">
-GitHub Copilot se ha convertido en una herramienta de apoyo que permite optimizar estas tareas mediante el uso de Inteligencia Artificial, ayudando a los equipos de QA a reducir tiempos operativos y enfocarse en actividades que requieren análisis funcional y criterio de negocio.
+GitHub Copilot es una herramienta basada en Inteligencia Artificial que puede apoyar estas actividades, ayudando a reducir el tiempo dedicado a tareas repetitivas y permitiendo que los equipos de QA se enfoquen en actividades que requieren análisis funcional y criterio de negocio.
 </p>
 
 <p align="justify">
-Es importante recordar que Copilot no reemplaza el rol del tester. Su propósito es asistir en tareas repetitivas y acelerar procesos, manteniendo siempre la validación y revisión por parte del equipo de calidad.
+Es importante recordar que Copilot no reemplaza el rol del tester. Su propósito es asistir en el trabajo diario, manteniendo siempre la validación y revisión por parte del equipo de calidad.
 </p>
 
-<p align="justify"><b>🛠️ Casos de uso de Copilot en Testing</b></p>
+<p align="justify"><b>🛠️ ¿Cómo puede ayudar Copilot en Testing?</b></p>
 
-<p align="justify"><b>1️⃣ Generación de casos de prueba</b></p>
+<ul>
+    <li align="justify">
+        <b>Generación de casos de prueba:</b> A partir de una historia de usuario o requisito funcional, puede sugerir escenarios positivos, negativos y casos límite.
+    </li>
 
-<p align="justify">
-A partir de una historia de usuario o requisito funcional, Copilot puede sugerir escenarios positivos, negativos y casos límite.
-</p>
+    <li align="justify">
+        <b>Automatización con Selenium:</b> Genera código base para automatizar flujos comunes como autenticación, búsquedas y validaciones de pantalla.
+    </li>
 
-<table width="100%" cellpadding="8" cellspacing="0" border="1" style="border-collapse:collapse;color:#000000;">
-    <tr>
-        <th>Prompt</th>
-        <th>Resultado esperado</th>
-    </tr>
-    <tr>
-        <td>
-            Generate test cases for a login page that contains Username, Password, Remember me checkbox and Login button.
-        </td>
-        <td>
-            Login exitoso, usuario inválido, contraseña incorrecta, campos vacíos, validación del checkbox y casos límite.
-        </td>
-    </tr>
-</table>
+    <li align="justify">
+        <b>Pruebas de accesibilidad:</b> Ayuda a interpretar resultados generados por herramientas como Axe DevTools y Access Assistant, explicando el impacto de las violaciones detectadas y posibles alternativas de solución.
+    </li>
+
+    <li align="justify">
+        <b>Generación de datos de prueba:</b> Permite crear rápidamente datos válidos e inválidos para pruebas funcionales y escenarios de validación.
+    </li>
+
+    <li align="justify">
+        <b>Documentación de defectos:</b> Facilita la creación de reportes estructurados con resumen, pasos para reproducir, resultado esperado, resultado obtenido y severidad.
+    </li>
+</ul>
 
 <br>
 
-<p align="justify"><b>2️⃣ Automatización con Selenium</b></p>
+<p align="justify"><b>💻 Ejemplo práctico</b></p>
 
 <p align="justify">
-Copilot puede generar código base para automatización a partir de comentarios o descripciones funcionales.
+A partir del siguiente comentario:
 </p>
 
-<table width="100%" cellpadding="8" cellspacing="0" border="1" style="border-collapse:collapse;color:#000000;">
-    <tr>
-        <th>Comentario</th>
-        <th>Sugerencia generada por Copilot</th>
-    </tr>
-    <tr>
-        <td>
-            // Login with valid credentials and verify dashboard is displayed
-        </td>
-        <td>
-            Generación automática del flujo de login utilizando Selenium WebDriver y validación del dashboard.
-        </td>
-    </tr>
-</table>
-
-<br>
-
-<pre style="background:#1f1f1f;padding:15px;color:#ffffff;overflow:auto;">
-driver.findElement(By.id("username"))
-      .sendKeys("testuser");
-
-driver.findElement(By.id("password"))
-      .sendKeys("Password123");
-
-driver.findElement(By.id("loginButton"))
-      .click();
-
-Assert.assertTrue(
-driver.findElement(By.id("dashboard"))
-      .isDisplayed());
-</pre>
-
-<p align="justify">
-✅ Beneficio: Reduce el tiempo dedicado a la escritura de código repetitivo y permite enfocarse en la lógica de negocio.
-</p>
-
-<p align="justify"><b>3️⃣ Apoyo en pruebas de accesibilidad</b></p>
-
-<p align="justify">
-Copilot puede ayudar a interpretar resultados generados por herramientas como Axe DevTools y Access Assistant.
-</p>
-
-<table width="100%" cellpadding="8" cellspacing="0" border="1" style="border-collapse:collapse;color:#000000;">
-    <tr>
-        <th>Violación</th>
-        <th>¿Cómo ayuda Copilot?</th>
-    </tr>
-    <tr>
-        <td>Buttons must have discernible text</td>
-        <td>
-            Explica el problema, identifica el criterio WCAG relacionado y propone ejemplos de corrección.
-        </td>
-    </tr>
-</table>
+<div style="background:#1f1f1f;padding:12px;border-radius:8px;color:#ffffff;font-family:Consolas, monospace;font-size:14px;">
+// Login with valid credentials and verify dashboard is displayed
+</div>
 
 <br>
 
 <p align="justify">
-Ejemplo de prompt:
+Copilot puede generar automáticamente el código base para implementar el flujo de autenticación utilizando Selenium, reduciendo el tiempo dedicado a tareas repetitivas.
 </p>
-
-<pre style="background:#1f1f1f;padding:15px;color:#ffffff;overflow:auto;">
-Explain this accessibility issue and provide a WCAG compliant solution:
-
-Buttons must have discernible text
-</pre>
-
-<p align="justify">
-✅ Beneficio: Facilita la comprensión de errores de accesibilidad para QA y desarrolladores.
-</p>
-
-<p align="justify"><b>4️⃣ Generación de datos de prueba</b></p>
-
-<p align="justify">
-Copilot puede generar rápidamente datos válidos e inválidos para pruebas funcionales.
-</p>
-
-<pre style="background:#1f1f1f;padding:15px;color:#ffffff;overflow:auto;">
-Generate 10 invalid email addresses for testing
-</pre>
-
-<pre style="background:#1f1f1f;padding:15px;color:#ffffff;overflow:auto;">
-user@
-@gmail.com
-usergmail.com
-user#mail.com
-test@.com
-</pre>
-
-<p align="justify">
-✅ Beneficio: Reduce el tiempo invertido en la creación de datos de prueba.
-</p>
-
-<p align="justify"><b>5️⃣ Documentación de defectos</b></p>
-
-<p align="justify">
-Copilot puede ayudar a generar reportes estructurados para defectos encontrados durante la ejecución de pruebas.
-</p>
-
-<table width="100%" cellpadding="8" cellspacing="0" border="1" style="border-collapse:collapse;color:#000000;">
-    <tr>
-        <th>Prompt</th>
-        <th>Resultado esperado</th>
-    </tr>
-    <tr>
-        <td>
-            Create a bug report for a login page returning HTTP 500 after authentication.
-        </td>
-        <td>
-            Summary, Steps to Reproduce, Expected Result, Actual Result, Severity y Environment.
-        </td>
-    </tr>
-</table>
-
-<br>
 
 <p align="justify"><b>⚠️ Buenas prácticas al utilizar Copilot</b></p>
 
-<table width="100%" cellpadding="8" cellspacing="0" border="1" style="border-collapse:collapse;color:#000000;">
-    <tr>
-        <th>Recomendación</th>
-        <th>Motivo</th>
-    </tr>
-    <tr>
-        <td>Validar siempre las respuestas</td>
-        <td>La IA puede generar información incorrecta o incompleta.</td>
-    </tr>
-    <tr>
-        <td>Revisar el código sugerido</td>
-        <td>Puede contener errores o no seguir estándares del proyecto.</td>
-    </tr>
-    <tr>
-        <td>Utilizar prompts claros</td>
-        <td>Mejora la calidad y precisión de los resultados.</td>
-    </tr>
-    <tr>
-        <td>Complementar con conocimiento funcional</td>
-        <td>La IA no reemplaza el entendimiento del negocio.</td>
-    </tr>
-</table>
+<ul>
+    <li align="justify">Validar siempre las respuestas generadas.</li>
+    <li align="justify">Revisar el código sugerido antes de incorporarlo al proyecto.</li>
+    <li align="justify">Utilizar prompts claros y específicos.</li>
+    <li align="justify">Complementar las respuestas con conocimiento funcional y técnico.</li>
+</ul>
 
-<br>
+<p align="justify"><b>🔄 El rol del QA sigue siendo fundamental</b></p>
 
-<p align="justify"><b>🔄 ¿Cómo complementa el trabajo del QA?</b></p>
-
-<table width="100%" cellpadding="8" cellspacing="0" border="1" style="border-collapse:collapse;color:#000000;">
-    <tr>
-        <th>Actividad</th>
-        <th>QA</th>
-        <th>Copilot</th>
-    </tr>
-    <tr>
-        <td>Análisis de requisitos</td>
-        <td>✔️</td>
-        <td>Apoyo</td>
-    </tr>
-    <tr>
-        <td>Diseño de casos de prueba</td>
-        <td>✔️</td>
-        <td>Apoyo</td>
-    </tr>
-    <tr>
-        <td>Automatización</td>
-        <td>✔️</td>
-        <td>Apoyo</td>
-    </tr>
-    <tr>
-        <td>Accesibilidad</td>
-        <td>✔️</td>
-        <td>Apoyo</td>
-    </tr>
-    <tr>
-        <td>Validación funcional</td>
-        <td>✔️</td>
-        <td>No reemplaza</td>
-    </tr>
-    <tr>
-        <td>Toma de decisiones</td>
-        <td>✔️</td>
-        <td>No reemplaza</td>
-    </tr>
-</table>
-
-<br>
+<p align="justify">
+Copilot puede acelerar actividades como la creación de casos de prueba, automatización, análisis de accesibilidad y documentación; sin embargo, el análisis funcional, la validación de resultados y la toma de decisiones continúan siendo responsabilidad del equipo de QA.
+</p>
 
 <p align="justify"><b>✅ Conclusión</b></p>
 
 <p align="justify">
-GitHub Copilot puede convertirse en un aliado para los equipos de QA al facilitar actividades relacionadas con diseño de pruebas, automatización, accesibilidad y documentación.
-</p>
-
-<p align="justify">
-Su mayor valor se obtiene cuando se utiliza como una herramienta de apoyo, complementando la experiencia y criterio del tester para entregar productos de mayor calidad.
+GitHub Copilot puede convertirse en un aliado para los equipos de calidad al optimizar tareas repetitivas y apoyar diferentes etapas del proceso de pruebas. Utilizado de forma adecuada, permite mejorar la productividad sin reemplazar la experiencia, el criterio ni el conocimiento del tester.
 </p>
 
 <br>
@@ -306,11 +143,19 @@ Su mayor valor se obtiene cuando se utiliza como una herramienta de apoyo, compl
 <span><strong style="font-size:14px;font-weight:800">Referencias</strong></span>
 
 <p align="justify">
-🔗 <a href="https://docs.github.com/en/copilot" target="_blank" style="color:#000000;">GitHub Copilot Documentation</a>
+Si deseas conocer más sobre GitHub Copilot y sus capacidades, puedes consultar la documentación oficial:
 </p>
 
 <p align="justify">
-🔗 <a href="https://docs.github.com/en/copilot/using-github-copilot/best-practices-for-using-github-copilot" target="_blank" style="color:#000000;">GitHub Copilot Best Practices</a>
+🔗 <a href="https://docs.github.com/en/copilot" target="_blank" style="color:#000000;">
+GitHub Copilot Documentation
+</a>
+</p>
+
+<p align="justify">
+🔗 <a href="https://docs.github.com/en/copilot/using-github-copilot/best-practices-for-using-github-copilot" target="_blank" style="color:#000000;">
+GitHub Copilot Best Practices
+</a>
 </p>
 
                         </div>
