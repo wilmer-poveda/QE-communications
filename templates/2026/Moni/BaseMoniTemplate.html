@@ -1,411 +1,53 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tech Talks - Engineering</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      background: #080618;
-      min-height: 100vh;
-      font-family: 'Inter', sans-serif;
-    }
-
-    #page {
-      position: relative;
-      width: 100%;
-      min-height: 100vh;
-      overflow: hidden;
-    }
-
-    #bg {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      z-index: 0;
-    }
-
-    .wrapper {
-      position: relative;
-      z-index: 1;
-      padding: 40px 20px;
-    }
-
-    /* ── EMAIL ── */
-    .ew {
-      font-family: 'Inter', sans-serif;
-      max-width: 600px;
-      margin: 0 auto;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 8px 60px rgba(80,30,200,0.4);
-    }
-
-    .eh {
-      width: 100%;
-      display: block;
-      height: 220px;
-      object-fit: cover;
-    }
-
-    .eb {
-      background: rgba(18,16,58,0.92);
-      backdrop-filter: blur(12px);
-      padding: 36px 40px 32px;
-    }
-
-    .greet { font-size: 15px; color: #C4B5FD; margin-bottom: 6px; }
-    .greet strong { color: #E9D5FF; font-weight: 600; }
-
-    .intro { font-size: 14px; color: #8B7FBF; margin-bottom: 28px; line-height: 1.6; }
-
-    .cta {
-      display: block;
-      text-align: center;
-      background: linear-gradient(135deg, #7C3AED, #2563EB);
-      color: #fff;
-      font-size: 14px;
-      font-weight: 600;
-      padding: 14px 28px;
-      border-radius: 50px;
-      text-decoration: none;
-      margin-bottom: 28px;
-      letter-spacing: 0.3px;
-    }
-
-    .tc {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(124,58,237,0.3);
-      border-radius: 16px;
-      padding: 22px 24px;
-      margin-bottom: 16px;
-    }
-
-    .tt { font-size: 16px; font-weight: 700; color: #E9D5FF; margin-bottom: 14px; line-height: 1.4; }
-
-    .tm { display: flex; align-items: center; gap: 14px; }
-
-    .av {
-      width: 68px;
-      height: 68px;
-      border-radius: 50%;
-      object-fit: cover;
-      display: block;
-      border: 2px solid rgba(124,58,237,0.5);
-      background: linear-gradient(135deg, #7C3AED, #2563EB);
-      flex-shrink: 0;
-    }
-
-    .tspk { font-size: 14px; font-weight: 600; color: #C4B5FD; margin: 0; }
-    .trole { font-size: 12px; color: #6D5FA0; margin: 1px 0 0; }
-
-    .db {
-      display: inline-block;
-      background: rgba(124,58,237,0.2);
-      border: 1px solid rgba(124,58,237,0.4);
-      color: #A78BFA;
-      font-size: 11px;
-      font-weight: 600;
-      padding: 3px 10px;
-      border-radius: 20px;
-      margin-bottom: 10px;
-      letter-spacing: 0.5px;
-    }
-
-    .sc {
-      background: rgba(124,58,237,0.08);
-      border: 1px solid rgba(124,58,237,0.2);
-      border-radius: 16px;
-      padding: 16px 20px;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      margin-bottom: 28px;
-    }
-
-    .si {
-      width: 36px; height: 36px;
-      flex-shrink: 0;
-      background: linear-gradient(135deg, #7C3AED, #4F46E5);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .stxt { font-size: 12px; color: #7C6FAB; line-height: 1.5; }
-    .stxt strong { color: #A78BFA; font-weight: 600; }
-
-    .divl { border: none; border-top: 1px solid rgba(124,58,237,0.15); margin: 0 0 20px; }
-
-    .ft { text-align: center; font-size: 11px; color: #e9d5ff; line-height: 1.8; }
-    .ft a { color: #6D5FA0; text-decoration: underline; }
-  </style>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Tech Talks - Engineering</title>
+<style type="text/css">
+  body { margin:0; padding:0; background-color:#080618; font-family: Arial, Helvetica, sans-serif; color:#C4B5FD; }
+  table { border-collapse: collapse; }
+  img { display: block; border: 0; }
+  a { color: #7C3AED; text-decoration: none; }
+</style>
 </head>
-<body>
-<div id="page">
-  <canvas id="bg"></canvas>
-
-  <div class="wrapper">
-    <div class="ew">
-      <img id="header-img" class="eh" src="http://imgfz.com/i/Y4iWAlw.png" alt="TechTalks Header"/>
-
-      <div class="eb">
-        <div class="greet">Hola, <strong>Glober</strong>👋</div>
-        <div class="intro">Conoce las Tech Talks que tenemos para ti durante este mes. Regístrate, aprende y comparte con tu equipo.</div>
-        <a class="cta" href="https://docs.google.com/presentation/d/e/2PACX-1vQ5Cz9eWw3i90yjcNkZ4e7nm-9TyOQznVG9588RA5MUYDQoAw3oqgqyrzeL3elPP2dSIRXtQSGWwoWZ/pub?start=false&loop=false&delayms=3000">Mira la agenda y regístrate a las charlas →</a>
-
-        <!-- Charla 1 -->
-        <div class="tc">
-          <div class="db">Miércoles 01 de julio</div>
-          <div class="tt">Escepticismo: una solución de ayer, para hoy</div>
-          <div class="tm">
-            <img id="speaker-1-img" class="av" src="https://api.starmeup.com/starmeup-api/v2/image/fdistycaosbmnhqltocq/250/250/1" alt="Federico Kereki">
-            <div>
-              <div class="tspk">Federico Kereki</div>
-              <div class="trole">Subject Matter Expert</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Charla 2 -->
-        <div class="tc">
-          <div class="db">Jueves 02 de julio</div>
-          <div class="tt">Automatización de pruebas en la era de IA: introducción a Stagehand</div>
-          <div class="tm">
-            <img id="speaker-2-img" class="av" src="https://api.starmeup.com/starmeup-api/v2/image/rnup1FyJR6_png/250/250/1" alt="Carlos Andrés Jaramillo">
-            <div>
-              <div class="tspk">Carlos Andrés Jaramillo</div>
-              <div class="trole">Test Automation Engineer</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Charla 3 -->
-        <div class="tc">
-          <div class="db">Martes 07 de julio</div>
-          <div class="tt">3rd Part - Unlock the hidden magic of prompts for Software Testers</div>
-          <div class="tm">
-            <img id="speaker-3-img" class="av" src="https://api.starmeup.com/starmeup-api/v2/image/hDMuZYouLJ_png/250/250/1" alt="Angie Silva">
-            <div>
-              <div class="tspk">Angie Silva</div>
-              <div class="trole">QC Analyst</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Charla 4 -->
-        <div class="tc">
-          <div class="db">Jueves 09 de julio</div>
-          <div class="tt">NotebookLM, tu socio para la investigación y el pensamiento</div>
-          <div class="tm">
-            <img id="speaker-4-img" class="av" src="https://api.starmeup.com/starmeup-api/v2/image/JvtHoqrHtQ_png/250/250/1" alt="Marco Garófalo">
-            <div>
-              <div class="tspk">Marco Garófalo</div>
-              <div class="trole">NodeJS Developer</div>
-            </div>
-          </div>
-        </div>
-
-       <!-- Charla 5 -->
-        <div class="tc">
-          <div class="db">Martes 14 de julio</div>
-          <div class="tt">Visualización de datos efectiva</div>
-          <div class="tm">
-            <img id="speaker-6-img" class="av" src="https://api.starmeup.com/starmeup-api/v2/image/fdistycaosbmnhqltocq/250/250/1" alt="Federico Kereki">
-            <div>
-              <div class="tspk">Federico Kereki</div>
-              <div class="trole">Subject Matter Expert</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Charla 6 -->
-        <div class="tc">
-          <div class="db">Jueves 16 de julio</div>
-          <div class="tt">Costos de Deuda Técnica</div>
-          <div class="tm">
-            <img id="speaker-6-img" class="av" src="https://api.starmeup.com/starmeup-api/v2/image/fdistycaosbmnhqltocq/250/250/1" alt="Federico Kereki">
-            <div>
-              <div class="tspk">Federico Kereki</div>
-              <div class="trole">Subject Matter Expert</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Charla 7 -->
-        <div class="tc">
-          <div class="db">Jueves 30 de julio</div>
-          <div class="tt">Sesión N° 3 - Tecnologías cuánticas: no todo son computadoras (no todo es software?, hay infra, telco, mucho más)</div>
-          <div class="tm">
-            <img id="speaker-7-img" class="av" src="https://api.starmeup.com/starmeup-api/v2/image/uvmoliabjoukgecdtwoo_png/250/250/1" alt="Alejandro Giraldo Londoño">
-            <div>
-              <div class="tspk">Alejandro Giraldo Londoño</div>
-              <div class="trole">Data Engineer</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="sc">
-          <div class="si">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-              <rect x="9.5" y="2.5" width="3.4" height="8.5" rx="1.7" fill="white" opacity="0.9"/>
-              <rect x="11.5" y="13" width="3.4" height="8.5" rx="1.7" fill="white" opacity="0.6"/>
-              <rect x="13" y="9.3" width="8.5" height="3.4" rx="1.7" fill="white" opacity="0.45"/>
-              <rect x="2.5" y="11.3" width="8.5" height="3.4" rx="1.7" fill="white" opacity="0.3"/>
-            </svg>
-          </div>
-          <div class="stxt">Únete a nuestro canal de Slack <strong>#qe-nola</strong> para que te enteres de noticias, charlas y más sobre el mundo tech.</div>
-        </div>
-
-        <hr class="divl">
-        <div class="ft">
-          <div>(c) 2026 Globant. All rights reserved.</div>
-          <div>This is a corporate communication from Globant.
-          If you are not sure about receiving our emails, <a href="https://more.globant.com/unsubscribe/u/497451/81154f1217a54a3046c781171b699e87d4d9c7fb534ee7f5ce4abc59c8619caa/1653674345" style="color:#818181;text-decoration: underline;" target="_blank">unsubscribe here</a> from all our internal communications.</p>
-          </a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-  (function () {
-    const c = document.createElement('canvas');
-    const x = c.getContext('2d');
-    c.width = 1200; c.height = 440;
-
-    x.fillStyle = '#0E0B2A';
-    x.fillRect(0, 0, 1200, 440);
-
-    function orb(cx, cy, cr, r, g, b, op) {
-      const spread = cr * 2.5;
-      const grad = x.createRadialGradient(cx, cy, 0, cx, cy, spread);
-      grad.addColorStop(0,    `rgba(${r},${g},${b},${op})`);
-      grad.addColorStop(0.25, `rgba(${r},${g},${b},${(op * .75).toFixed(2)})`);
-      grad.addColorStop(0.5,  `rgba(${r},${g},${b},${(op * .4).toFixed(2)})`);
-      grad.addColorStop(0.75, `rgba(${r},${g},${b},${(op * .15).toFixed(2)})`);
-      grad.addColorStop(1,    `rgba(${r},${g},${b},0)`);
-      x.fillStyle = grad;
-      x.beginPath(); x.arc(cx, cy, spread, 0, Math.PI * 2); x.fill();
-    }
-
-    orb(180,  140, 260, 108, 63,  212, 0.7);
-    orb(1020, 180, 220,  26, 95,  191, 0.7);
-    orb(600,  360, 160,  59, 31,  163, 0.7);
-    orb(920,  180, 120,   0, 194, 255, 0.3);
-
-    x.lineWidth = 0.8;
-    x.strokeStyle = 'rgba(120,90,255,0.12)';
-    for (let px = 0; px <= 1200; px += 60) { x.beginPath(); x.moveTo(px, 0); x.lineTo(px, 440); x.stroke(); }
-    for (let py = 0; py <= 440;  py += 60) { x.beginPath(); x.moveTo(0, py); x.lineTo(1200, py); x.stroke(); }
-
-    const headerImg = document.getElementById('header-img');
-    if (!headerImg.src || headerImg.getAttribute('src') === '') {
-      headerImg.src = c.toDataURL('image/png');
-    }
-  })();
-
-  const canvas = document.getElementById('bg');
-  const ctx    = canvas.getContext('2d');
-  const BW = 3840, BH = 2160;
-  canvas.width = BW; canvas.height = BH;
-
-  function rand(a, b) { return a + Math.random() * (b - a); }
-  function randInt(a, b) { return Math.floor(rand(a, b)); }
-
-  ctx.fillStyle = '#080618';
-  ctx.fillRect(0, 0, BW, BH);
-
-  function nebula(x, y, r, cr, cg, cb, a) {
-    const g = ctx.createRadialGradient(x, y, 0, x, y, r);
-    g.addColorStop(0,   `rgba(${cr},${cg},${cb},${(a * .7).toFixed(2)})`);
-    g.addColorStop(0.4, `rgba(${cr},${cg},${cb},${(a * .3).toFixed(2)})`);
-    g.addColorStop(1,   `rgba(${cr},${cg},${cb},0)`);
-    ctx.fillStyle = g;
-    ctx.save(); ctx.translate(x, y); ctx.scale(1, .65);
-    ctx.beginPath(); ctx.arc(0, 0, r, 0, Math.PI * 2); ctx.fill();
-    ctx.restore();
-  }
-
-  nebula(BW*.18, BH*.35, 1040, 88,  28,  220, .72);
-  nebula(BW*.78, BH*.55,  960, 30,  80,  200, .68);
-  nebula(BW*.5,  BH*.2,   760, 120, 40,  255, .5);
-  nebula(BW*.85, BH*.15,  600, 20,  120, 240, .45);
-  nebula(BW*.1,  BH*.8,   680, 60,  20,  180, .5);
-  nebula(BW*.65, BH*.85,  720, 40,  60,  210, .45);
-  nebula(BW*.35, BH*.6,   500, 100, 30,  240, .3);
-  nebula(BW*.92, BH*.72,  440, 70,  20,  200, .35);
-
-  for (let i = 0; i < 56; i++) {
-    const x1 = rand(0,BW), y1 = rand(0,BH), x2 = rand(0,BW), y2 = rand(0,BH);
-    ctx.strokeStyle = `hsla(${randInt(240,280)},80%,70%,${rand(.02,.1)})`;
-    ctx.lineWidth = rand(.8, 2.4);
-    ctx.beginPath(); ctx.moveTo(x1, y1);
-    ctx.quadraticCurveTo((x1+x2)/2+rand(-400,400), (y1+y2)/2+rand(-400,400), x2, y2);
-    ctx.stroke();
-  }
-
-  for (let x = 0; x < BW; x += 120) {
-    ctx.strokeStyle = `rgba(140,100,255,${rand(.04,.1)})`; ctx.lineWidth = .8;
-    ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,BH); ctx.stroke();
-  }
-  for (let y = 0; y < BH; y += 120) {
-    ctx.strokeStyle = `rgba(100,140,255,${rand(.04,.1)})`; ctx.lineWidth = .8;
-    ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(BW,y); ctx.stroke();
-  }
-
-  for (let i = 0; i < 900; i++) {
-    ctx.fillStyle = `hsla(${randInt(220,290)},80%,${randInt(70,95)}%,${rand(.15,.85)})`;
-    ctx.beginPath(); ctx.arc(rand(0,BW), rand(0,BH), rand(1,7), 0, Math.PI*2); ctx.fill();
-  }
-
-  for (let i = 0; i < 80; i++) {
-    const x = rand(0,BW), y = rand(0,BH), r = rand(2,5), h = randInt(200,270);
-    const g = ctx.createRadialGradient(x,y,0,x,y,r*10);
-    g.addColorStop(0,  `hsla(${h},90%,95%,.9)`);
-    g.addColorStop(.3, `hsla(${h},80%,80%,.3)`);
-    g.addColorStop(1,  `hsla(${h},80%,80%,0)`);
-    ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x,y,r*10,0,Math.PI*2); ctx.fill();
-    ctx.fillStyle = 'rgba(255,255,255,.95)'; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill();
-  }
-
-  [[BW*.22,BH*.28,280,3],[BW*.75,BH*.65,220,2],[BW*.55,BH*.82,160,1.6],[BW*.88,BH*.22,120,1.2]].forEach(([x,y,r,lw]) => {
-    ctx.strokeStyle = 'rgba(160,80,255,.18)'; ctx.lineWidth = lw;
-    ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.stroke();
-    ctx.strokeStyle = 'rgba(160,80,255,.07)'; ctx.lineWidth = lw*.5;
-    ctx.beginPath(); ctx.arc(x,y,r*1.3,0,Math.PI*2); ctx.stroke();
-  });
-
-  [[BW*.08,BH*.6,90],[BW*.93,BH*.38,70],[BW*.48,BH*.93,60],[BW*.36,BH*.07,56]].forEach(([x,y,s]) => {
-    ctx.strokeStyle = 'rgba(160,120,255,.1)'; ctx.lineWidth = 1.6;
-    ctx.beginPath();
-    for (let i = 0; i < 6; i++) {
-      const a = (Math.PI/3)*i - Math.PI/6;
-      i === 0 ? ctx.moveTo(x+s*Math.cos(a), y+s*Math.sin(a)) : ctx.lineTo(x+s*Math.cos(a), y+s*Math.sin(a));
-    }
-    ctx.closePath(); ctx.stroke();
-  });
-
-  const vig = ctx.createRadialGradient(BW/2,BH/2,BH*.2,BW/2,BH/2,BH*.85);
-  vig.addColorStop(0, 'rgba(8,6,24,0)'); vig.addColorStop(1, 'rgba(4,2,16,.7)');
-  ctx.fillStyle = vig; ctx.fillRect(0,0,BW,BH);
-
-  const shine = ctx.createLinearGradient(0,0,BW,BH);
-  shine.addColorStop(0,  'rgba(130,80,255,.04)');
-  shine.addColorStop(.5, 'rgba(60,120,255,.02)');
-  shine.addColorStop(1,  'rgba(20,60,220,.04)');
-  ctx.fillStyle = shine; ctx.fillRect(0,0,BW,BH);
-
-  // Ajusta altura del contenedor al contenido
-  setTimeout(() => {
-    document.getElementById('page').style.minHeight =
-      document.querySelector('.wrapper').offsetHeight + 'px';
-  }, 200);
-</script>
+<body bgcolor="#080618" style="margin:0; padding:0; background-color:#080618; font-family: Arial, Helvetica, sans-serif; color:#C4B5FD;">
+<table width="100%" bgcolor="#080618" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td align="center" style="padding: 20px;">
+      <table width="600" bgcolor="#12103A" cellpadding="0" cellspacing="0" border="0" style="border-radius:20px;">
+        <tr>
+          <td align="center" style="padding: 0;">
+            <img src="http://imgfz.com/i/Y4iWAlw.png" alt="TechTalks Header" width="600" style="display:block; border-radius: 0 0 20px 20px;" />
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 36px 40px 32px; background-color: rgba(18,16,58,0.92); color:#C4B5FD;">
+            <p style="font-size:15px; margin-bottom:6px;">Hola, <strong style="color:#E9D5FF;">Glober</strong>👋</p>
+            <p style="font-size:14px; color:#8B7FBF; margin-bottom:28px; line-height:1.6;">
+              Conoce las Tech Talks que tenemos para ti durante este mes. Regístrate, aprende y comparte con tu equipo.
+            </p>
+            <p style="text-align:center; margin-bottom:28px;">
+              <a href="https://docs.google.com/presentation/d/e/2PACX-1vQ5Cz9eWw3i90yjcNkZ4e7nm-9TyOQznVG9588RA5MUYDQoAw3oqgqyrzeL3elPP2dSIRXtQSGWwoWZ/pub?start=false&loop=false&delayms=3000"
+                 style="display:inline-block; background-color:#7C3AED; color:#fff; padding:14px 28px; border-radius:50px; font-weight:600; font-size:14px; text-decoration:none;">
+                Mira la agenda y regístrate a las charlas →
+              </a>
+            </p>
+            <!-- Aquí irían las charlas en tablas similares -->
+            <!-- Por ejemplo, cada charla en una tabla con fondo sólido y bordes redondeados -->
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color:#080618; padding: 20px; text-align:center; font-size:11px; color:#e9d5ff; border-radius: 0 0 20px 20px;">
+            (c) 2026 Globant. All rights reserved.<br />
+            This is a corporate communication from Globant.<br />
+            If you are not sure about receiving our emails, <a href="https://more.globant.com/unsubscribe/u/497451/81154f1217a54a3046c781171b699e87d4d9c7fb534ee7f5ce4abc59c8619caa/1653674345" style="color:#6D5FA0; text-decoration:underline;">unsubscribe here</a> from all our internal communications.
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
 </body>
 </html>
