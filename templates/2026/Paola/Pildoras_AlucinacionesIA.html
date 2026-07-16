@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Píldoras de Conocimiento</title>
+  <meta name="viewport" content="width=device-width" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="shortcut icon" type="image/png" href="https://communications.globant.com/Comm/favicon/images/favicon.png">
+
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap');
+    #logos {
+      background-color: #2D3436;
+      position: absolute;
+      width: 650px;
+    }
+
+    img.imgs {
+      display: inline-grid;
+      max-height: 25px;
+      padding: 5px 40px;
+      margin: auto;
+    }
+    .img-pill{
+      display: flex;
+      margin: auto;
+      padding: 15px 10px;
+      max-width: 500px;
+    }
+  </style>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #f4f4f7; font-family: 'Segoe UI', Helvetica, Arial, sans-serif;">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #9bd4e3; padding: 20px;">
+    <tr>
+      <td align="center">
+        <!-- Contenedor Principal -->
+        <table width="650" border="0" cellspacing="0" cellpadding="0"
+          style="background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+          <!-- Encabezado Estilo Moderno -->
+          <tr>
+            <td align="center" style="background-color: #ffffff;">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td style="position: relative; text-align: center; background-color: #2D3436;">
+                    <!-- Imagen de cabecera -->
+                    <img src="https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/assets/images/2026/Wilmer/header_pildiras_v1.png" alt="Píldoras de Conocimiento"
+                      width="650" style="display: block; width: 100%; max-width: 650px; height: auto; border: 0;">
+                      <p style="color: #dfe6e9;font-family: 'Heebo';font-size: 1.3em; font-weight: 700; margin: 10px 0 0 0">Tu dosis tech de hoy</p>
+                  </td>
+                </tr>
+                <!-- Barra de acento inferior que combina con los colores de la imagen -->
+                <tr>
+                  <td height="5" style="background: linear-gradient(to right, #D63384, #0DCAF0, #6610F2, #FD7E14);">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color: #2D3436; text-align: center;">
+              <div id="logos">
+              <img
+                src="https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/assets/images/studio/Quality_Engineering_full_white.png"
+                alt="QE Studio" class="imgs">
+
+              <img
+                src="https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/assets/images/studio/NOLAWhite.png"
+                alt="QE Logo" class="imgs">
+
+              <img src="https://statics.globant.com/production/public/2020-04/globant-light-bg-color%402x%20%282%29.png"
+                class="imgs">
+            </div>
+            </td>
+          </tr>
+
+          <!-- Contenido: Píldora 1 -->
+          <tr>
+            <td style="padding: 70px 30px 20px 30px;">
+              <h2 style="color: #050505; margin: 0 0 15px 0; font-size: 22px;"><center>Alucinaciones de la inteligencia artificial (IA)</center></h2>
+              <p style="color: #070707; line-height: 1.6; font-size: 16px; margin-bottom: 20px;">
+                ¿Qué es una Alucinación de IA?
+                <br>
+                <br>
+                Es cuando un modelo de lenguaje (como un LLM) genera una respuesta que suena completamente convincente, lógica y coherente, pero que es fácticamente falsa o inventada.
+                <br>
+                En términos de QA, no es un error de código que rompe el sistema (un crash); es la IA fallando con una confianza absoluta. Nuestro reto ya no es buscar pantallas rotas, sino auditar la verdad.
+                <br>
+                Las alucinaciones no son fallos aleatorios, son una característica intrínseca de cómo funcionan los LLMs actuales. Un LLM es, esencialmente, una máquina de predicción probabilística de tokens (palabras o subpalabras). No es una base de datos de hechos, ni un motor de búsqueda que "entiende" la verdad objetiva.
+                <br>
+                <br>
+                ¿Por qué suceden?
+    								<ul>
+      							<li><strong>Naturaleza Generativa:</strong> El modelo está entrenado para maximizar la probabilidad de que la secuencia de texto parezca coherente y natural, no para que sea cierta. Ante una pregunta compleja, prioriza la fluidez narrativa sobre la precisión fáctica.</li>
+      							<li><strong>Confusión de Creatividad vs. Hecho:</strong> El modelo confunde los patrones creativos que aprendió durante el entrenamiento con datos duros. Cree que si una respuesta suena bien y sigue la estructura lógica correcta, debe ser correcta.</li>
+      							<li><strong>Falta de Anclaje:</strong> Sin acceso a información externa y actualizada (grounding), el modelo solo puede confiar en los pesos internos de su red neuronal, que son estáticos y pueden contener sesgos o datos incorrectos.</li>
+    								</ul>
+              </p>
+              <br><center>
+							<img alt="alucinaciones" src="https://wilmer-poveda.github.io/QE-communications/assets/images/2026/Paola/alucinacionesIA.jpg" width="500" ; display:inline-block;" />
+              </center>
+              <br>
+              Este gráfico ilustra el concepto central: el "cerebro" de la IA procesando una pregunta histórica simple, pero en lugar de recuperar datos precisos, su motor creativo se dispara. La lógica interna se confunde (patrones abstractos) y genera una respuesta fluida pero completamente inventada: "Los romanos inventaron los hoverboards".
+              <br>
+              <br>
+              Por último, un tip para el proceso de QA podría ser diseñar un Dataset de "Golden Prompts" (Casos de Prueba Clave). Al igual que se tiene una suite de pruebas de regresión, crear un banco fijo de al menos 50-100 preguntas críticas para el negocio. Este dataset debe incluir deliberadamente:
+              <br>
+              <br>
+              <strong>Preguntas con trampa:</strong> Preguntas sobre temas que no están en la base de conocimiento para ver si la IA es capaz de decir "No lo sé" o si prefiere inventar una respuesta.
+              <br>
+              <strong>Casos de borde (Edge cases):</strong> Variaciones con sinónimos, modismos regionales, o errores ortográficos para evaluar si el sistema mantiene la fidelidad bajo presión.
+              <br>
+              <br>
+              Si quieren explorar el concepto en las grandes tech como IBM, Google y Anthropic, pueden usar los siguientes recursos:
+              <br>
+              <!-- CTA-->
+														<table border="0" align="center" cellpadding="0" cellspacing="20">
+															<tbody>
+																<tr>
+																	<td align="center" width="100" height="10" bgcolor="#000000"
+																	style="-webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px;font-family:Montserrat, Helvetica, sans-serif; color: #FFFFFF;background-color: #428fcd; margin:20px">
+																		<a href="https://www.ibm.com/think/topics/ai-hallucinations" target="_blank"
+																		style="font-family: Montserrat;font-size:12px; font-weight: bold; font-family:sans-serif; text-decoration: none; line-height:30px; width:100%; display:inline-block">
+																		<span style="color: #FFFFFF;line-height: 30px;">IBM Think</span></a>
+                                    <br>
+                                    <a href="https://cloud.google.com/discover/what-are-ai-hallucinations" target="_blank"
+																		style="font-family: Montserrat;font-size:12px; font-weight: bold; font-family:sans-serif; text-decoration: none; line-height:30px; width:100%; display:inline-block">
+																		<span style="color: #FFFFFF;line-height: 30px;">Google Cloud</span></a>
+                                    <br>
+                                    <a href="https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations" target="_blank"
+																		style="font-family: Montserrat;font-size:12px; font-weight: bold; font-family:sans-serif; text-decoration: none; line-height:30px; width:100%; display:inline-block">
+																		<span style="color: #FFFFFF;line-height: 30px;">Anthropic</span></a>
+																	</td>	
+																</tr>
+															</tbody>
+														</table>
+            </td>
+          </tr>
+
+          <!-- Separador -->
+          <tr>
+            <td style="padding: 0 30px;">
+              <hr style="border: 0; border-top: 1px solid #eee;">
+            </td>
+          </tr>
+
+
+          <!-- Footer -->
+          <tr>
+            <td>
+                <table width="650" cellspacing="0" cellpadding="0" align="center"
+                  style="height: 190px; background-color: #fffffa; border-bottom-right-radius: 1.1rem; border-bottom-left-radius: 1.1rem">
+                  <tbody>
+                    <tr>
+                      <td style="font-size: 11px; text-align: center; padding: 20px; color: #53555a;" align="center">
+                        <img style="padding-bottom: 5px; height: 35px; margin-left: 25px"
+                          src="https://raw.githubusercontent.com/wilmer-poveda/QE-communications/refs/heads/main/public-images/headers/moni_bernal/logo_gb_00.png">
+                        <!--https://ci6.googleusercontent.com/proxy/KGln9EvJV6lg_rJMX0Ps7KuemPicTr3ch1EKg-TlBUO45OvzNxcXgyL5hcNQ002ud9Z-qZM6Idf2XSvgk5R6c0dTFk7sIqdY5WAUSmnAgUUA-yZJKWcQ=s0-d-e1-ft#https://communications.globant.com/Comm/Corporate/GameofPods/glb.png-->
+                        <p class="copy-right">&copy 2026 Globant. All rights reserved</p>
+                        <p class="copy-right">This is a corporate communication from Globant. <br> If you are not sure
+                          about receiving our emails, <a
+                            href="https://communications.globant.com/Comm/Studios/QualityEngineering/%7B%7BUnsubscribe%7D%7D"
+                            target="_blank" style="color: #53555a;" rel="noopener">unsubscribe</a> here from all our
+                          internal communications.</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
